@@ -5,15 +5,8 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-
-
-
-
-
   @override
   Widget build(BuildContext context) {
-
-    print("www");
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -22,11 +15,6 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
-
-  MyApp(){
-
-    print("init  ");
-  }
 }
 
 class MyHomePage extends StatefulWidget {
@@ -34,39 +22,31 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
-
-
   @override
-  _MyHomePageState createState(){
-    print("createState  ");
-    return  _MyHomePageState();
-  }
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
-  @override
-  void initState() {
-    super.initState();
-
-    print("initstate");
-  }
   @override
   Widget build(BuildContext context) {
-    print("_MyHomePageState");
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-          ],
+        child: new ListView.builder(
+            itemCount: 10,
+          itemBuilder: (BuildContext context,int postion){
+
+
+              if(postion ==0 ){
+                return new Text("wilson+$postion");
+              }else {
+                return new Text("wilson+$postion");
+              }
+
+          },
+
         ),
       ),
     );

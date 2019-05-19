@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_demo/ToastView.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,19 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: new ListView.builder(
-            itemCount: 10,
-          itemBuilder: (BuildContext context,int postion){
-
-
-              if(postion ==0 ){
-                return new Text("wilson+$postion");
-              }else {
-                return new Text("wilson+$postion");
-              }
-
-          },
-
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
+            ),
+          ],
         ),
       ),
     );

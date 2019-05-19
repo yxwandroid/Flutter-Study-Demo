@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_demo/ToastView.dart';
 
 void main() => runApp(MyApp());
 //类似qq聊天列表界面

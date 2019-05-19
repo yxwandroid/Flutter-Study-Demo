@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_demo/ToastView.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,30 +33,19 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
+        child: new ListView.builder(
+            itemCount: 10,
+          itemBuilder: (BuildContext context,int postion){
 
-        child: new Container(
-          height: 35 ,
-          margin: const EdgeInsets.all(10.0),
-//          padding: const EdgeInsets.all(10.0),
-          decoration:  new BoxDecoration(
-//            border: new Border.all(width: 1.0,color: Colors.grey),
-            color: Color(0xffF5F7F9),
-            borderRadius: new BorderRadius.all(new Radius.circular(10.0)),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              new Container(
 
-                width: 15,
-                height: 15,
-                child: Image.asset("images/search.png"),
-              ),
-              Text(
-                '昵称/备注/标签 #F5F7F9',
-              ),
-            ],
-          ),
+              if(postion ==0 ){
+                return new Text("wilson+$postion");
+              }else {
+                return new Text("wilson+$postion");
+              }
+
+          },
+
         ),
       ),
     );

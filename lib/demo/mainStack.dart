@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flustars/flustars.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -20,47 +20,39 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
-
-
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
-
-  @override
-  void initState() {
-    super.initState();
-    _initAsync();
-  }
-
-  _initAsync() async {
-    /// App启动时读取Sp数据，需要异步等待Sp初始化完成。
-    await SpUtil.getInstance();
-
-    /// 同步使用Sp。
-    SpUtil.remove("username");
-    String defName = SpUtil.getString("username", defValue: "sky");
-    SpUtil.putString("username", "sky24");
-    String name = SpUtil.getString("username");
-    print("MyApp defName: $defName, name: $name");
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body: Container(
+        child: Stack(
+          alignment: Alignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button:  en ',
+            new CircleAvatar(
+              backgroundImage: AssetImage("assets/images/img.jpg"),
             ),
+            Positioned(
+                top: 0.0,
+                right: 1,
+                child: new Container(
+                  width: 15,
+                  height:15,
+                  decoration: BoxDecoration(
+                      color: Colors.red,
+                      border: new Border.all(width: 1.0,color: Colors.white),
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+
+                  child: Text(
+                    "    ",
+                  ),
+                )),
           ],
         ),
       ),

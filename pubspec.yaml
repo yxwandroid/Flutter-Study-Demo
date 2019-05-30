@@ -28,6 +28,7 @@ dependencies:
   image_picker: ^0.6.0+7
   flustars: ^0.2.5
   dio: ^2.1.5
+  sqflite: ^1.1.0
   flutter_custom_bottom_tab_bar:
     git: https://github.com/LiuC520/flutter_custom_bottom_tab_bar.git
 
@@ -47,8 +48,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/images/img.jpg
-    - assets/images/voice_left.png
+    - images/img.jpg
+    - images/voice_left.png
+    - images/pwd.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -139,6 +139,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.3.4"
+  rxdart:
+    dependency: "direct main"
+    description:
+      name: rxdart
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.21.0"
   shared_preferences:
     dependency: "direct main"
     description:

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:rxdart/rxdart.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -25,6 +25,26 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+
+  @override
+  void initState() {
+    super.initState();
+
+
+  }
+
+
+
+  start(){
+    Observable.just(1).delay(new Duration(milliseconds: 1000)).listen((_) {
+
+      print("eee  wilson");
+
+
+    });
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,9 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button:  en ',
-            ),
+            new RaisedButton(onPressed: (){
+              start();
+            }),
           ],
         ),
       ),

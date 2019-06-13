@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+   <key>NSPhotoLibraryUsageDescription</key>
+    <string>Example usage description</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Example usage description</string>
     <key>NSCameraUsageDescription</key>
     <string>Camera permission is required for barcode scanning.</string>
 

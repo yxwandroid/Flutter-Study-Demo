@@ -3,9 +3,6 @@ PODS:
     - Flutter
   - audioplayers (0.0.1):
     - Flutter
-  - barcode_scan (0.0.1):
-    - Flutter
-    - MTBBarcodeScanner
   - flustars (0.0.1):
     - Flutter
   - Flutter (1.0.0)
@@ -16,7 +13,6 @@ PODS:
   - FMDB/standard (2.7.5)
   - image_picker (0.0.1):
     - Flutter
-  - MTBBarcodeScanner (5.0.11)
   - path_provider (0.0.1):
     - Flutter
   - shared_preferences (0.0.1):
@@ -28,7 +24,6 @@ PODS:
 DEPENDENCIES:
   - audioplayer (from `.symlinks/plugins/audioplayer/ios`)
   - audioplayers (from `.symlinks/plugins/audioplayers/ios`)
-  - barcode_scan (from `.symlinks/plugins/barcode_scan/ios`)
   - flustars (from `.symlinks/plugins/flustars/ios`)
   - Flutter (from `.symlinks/flutter/ios`)
   - flutter_drag_scale (from `.symlinks/plugins/flutter_drag_scale/ios`)
@@ -40,15 +35,12 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FMDB
-    - MTBBarcodeScanner
 
 EXTERNAL SOURCES:
   audioplayer:
     :path: ".symlinks/plugins/audioplayer/ios"
   audioplayers:
     :path: ".symlinks/plugins/audioplayers/ios"
-  barcode_scan:
-    :path: ".symlinks/plugins/barcode_scan/ios"
   flustars:
     :path: ".symlinks/plugins/flustars/ios"
   Flutter:
@@ -67,13 +59,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   audioplayer: f4462b84216b9c55f02bbbdc7ab60eec7427b2d4
   audioplayers: 84f968cea3f2deab00ec4f8ff53358b3c0b3992c
-  barcode_scan: 33f586d02270046fc6559135038b34b5754eaa4f
   flustars: 68f8784f3841ce82350ef82598e3b5bc29c36532
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   flutter_drag_scale: 545fd546a1e968bd965883f0511b1c47f049f37d
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   image_picker: 16e5fec1fbc87fd3b297c53e4048521eaf17cd06
-  MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
   shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
   sqflite: ff1d9da63c06588cc8d1faf7256d741f16989d5a

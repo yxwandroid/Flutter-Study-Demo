@@ -72,8 +72,17 @@ flutter:
     - images/left_voice_1.png
     - images/left_voice_2.png
     - images/left_voice_3.png
+    - images/left_voice_3.png
 
-
+    - images/voice_volume_7.png
+    - images/voice_volume_6.png
+    - images/voice_volume_5.png
+    - images/voice_volume_4.png
+    - images/voice_volume_3.png
+    - images/voice_volume_2.png
+    - images/voice_volume_1.png
+    - images/cancel_voice.png
+    - images/voice_too_short_ico.png
 
 
     #      表情图片资源

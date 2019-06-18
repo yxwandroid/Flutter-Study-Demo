@@ -1,8 +1,6 @@
 PODS:
   - audioplayer (0.0.1):
     - Flutter
-  - audioplayers (0.0.1):
-    - Flutter
   - flustars (0.0.1):
     - Flutter
   - Flutter (1.0.0)
@@ -20,10 +18,13 @@ PODS:
   - sqflite (0.0.1):
     - Flutter
     - FMDB (~> 2.7.2)
+  - url_launcher (0.0.1):
+    - Flutter
+  - webview_flutter (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - audioplayer (from `.symlinks/plugins/audioplayer/ios`)
-  - audioplayers (from `.symlinks/plugins/audioplayers/ios`)
   - flustars (from `.symlinks/plugins/flustars/ios`)
   - Flutter (from `.symlinks/flutter/ios`)
   - flutter_drag_scale (from `.symlinks/plugins/flutter_drag_scale/ios`)
@@ -31,6 +32,8 @@ DEPENDENCIES:
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
   - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
+  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -39,8 +42,6 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   audioplayer:
     :path: ".symlinks/plugins/audioplayer/ios"
-  audioplayers:
-    :path: ".symlinks/plugins/audioplayers/ios"
   flustars:
     :path: ".symlinks/plugins/flustars/ios"
   Flutter:
@@ -55,10 +56,13 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/shared_preferences/ios"
   sqflite:
     :path: ".symlinks/plugins/sqflite/ios"
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
+  webview_flutter:
+    :path: ".symlinks/plugins/webview_flutter/ios"
 
 SPEC CHECKSUMS:
   audioplayer: f4462b84216b9c55f02bbbdc7ab60eec7427b2d4
-  audioplayers: 84f968cea3f2deab00ec4f8ff53358b3c0b3992c
   flustars: 68f8784f3841ce82350ef82598e3b5bc29c36532
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   flutter_drag_scale: 545fd546a1e968bd965883f0511b1c47f049f37d
@@ -67,6 +71,8 @@ SPEC CHECKSUMS:
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
   shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
   sqflite: ff1d9da63c06588cc8d1faf7256d741f16989d5a
+  url_launcher: 0067ddb8f10d36786672aa0722a21717dba3a298
+  webview_flutter: 1aa7604e6cdb451a9b7ed2c37d5454c0b440246b
 
 PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
 

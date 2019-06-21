@@ -24,7 +24,8 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-const  kUrl = 'http://m10.music.126.net/20190606154312/8e4f4ae65f9a682002f482e5c5632a6c/ymusic/d60e/d53a/a031/1578f4093912b3c1f41a0bfd6c10115d.mp3';
+//const  kUrl = 'http://m10.music.126.net/20190606154312/8e4f4ae65f9a682002f482e5c5632a6c/ymusic/d60e/d53a/a031/1578f4093912b3c1f41a0bfd6c10115d.mp3';
+const  kUrl = 'http://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/chat-logs/8D2B68A578A8463381640F8E4CB62554/93/1aa5d13c-db47-49c9-808a-fe6b63dd7448/wav-20190619045224.wav';
 
 class _MyHomePageState extends State<MyHomePage> {
 

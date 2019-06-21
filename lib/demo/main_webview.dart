@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayer/audioplayer.dart';
-void main() => runApp(MyApp());
+import 'package:flutter_app_demo/demo/webview_demo.dart';
 
+
+
+void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,34 +26,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-//const  kUrl = 'http://m10.music.126.net/20190606154312/8e4f4ae65f9a682002f482e5c5632a6c/ymusic/d60e/d53a/a031/1578f4093912b3c1f41a0bfd6c10115d.mp3';
-const  kUrl = 'http://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/chat-logs/8D2B68A578A8463381640F8E4CB62554/93/1aa5d13c-db47-49c9-808a-fe6b63dd7448/wav-20190619045224.wav';
-
 class _MyHomePageState extends State<MyHomePage> {
-
-
-  bool isPlay = false;
-  AudioPlayer audioPlayer;
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    audioPlayer = new AudioPlayer();
-  }
-
-  Future<void> play() async {
-    await audioPlayer.play(kUrl);
-    isPlay = true;
-  }
-
-  Future<void> stop() async {
-    await audioPlayer.stop();
-    isPlay = false;
-
-  }
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,19 +39,21 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             RaisedButton(
               onPressed: (){
-
-                if(isPlay){
-                  stop();
-                }else{
-                  play();
-                }
-
+                _handleURLButtonPress(context,"https://mp.weixin.qq.com/s/yE8LxokMYrY7Tp9AujvE1w");
               },
-              child: new Text("play"),
+              child: Text(
+                'You have pushed the button:  en ',
+              ),
             ),
           ],
         ),
       ),
     );
+  }
+
+
+  void _handleURLButtonPress(BuildContext context, String url) {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => WebViewContainer(url)));
   }
 }

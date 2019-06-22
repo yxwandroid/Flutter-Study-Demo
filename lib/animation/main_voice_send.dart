@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: VoiceView(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
 class VoiceView extends StatefulWidget {
   VoiceView({Key key, this.title}) : super(key: key);
 
@@ -31,13 +16,13 @@ class _VoiceViewState extends State<VoiceView> {
   String textShow = "按住说话";
   String toastShow = "手指上滑,取消发送";
 
-  bool isVoiceState = true; ///默认隐藏状态
+  bool isVoiceState = false; ///默认隐藏状态
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("wwww"),
       ),
       body: GestureDetector(
         onVerticalDragStart: (details) {
@@ -73,7 +58,7 @@ class _VoiceViewState extends State<VoiceView> {
           height: double.infinity,
           color: Colors.white,
           child: Offstage(
-            offstage: isVoiceState,
+            offstage: false,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

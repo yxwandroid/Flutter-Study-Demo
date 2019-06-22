@@ -60,35 +60,31 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - images/img.jpg
-    - images/voice_left.png
-    - images/pwd.png
-    - images/chat_room_left_voice.png
-    - images/delete.png
-
-    - images/file_ico.png
-    - images/photo_ico.png
+  # assets-generator-begin
+  # images/*
     - images/transfer_ico.png
+    - images/photo_ico.png
     - images/material_ico.png
+    - images/voice_left.png
+    - images/file_ico.png
+    - images/img.jpg
     - images/camera_ico.png
-
-    - images/left_voice_1.png
+    - images/chat_room_left_voice.png
+    - images/left_voice_3.png
+    - images/pwd.png
     - images/left_voice_2.png
-    - images/left_voice_3.png
-    - images/left_voice_3.png
-
-    - images/voice_volume_7.png
-    - images/voice_volume_6.png
-    - images/voice_volume_5.png
-    - images/voice_volume_4.png
-    - images/voice_volume_3.png
-    - images/voice_volume_2.png
     - images/voice_volume_1.png
+    - images/voice_volume_3.png
+    - images/left_voice_1.png
+    - images/voice_volume_2.png
+    - images/voice_volume_6.png
     - images/cancel_voice.png
     - images/voice_too_short_ico.png
-
-
-    #      表情图片资源
+    - images/voice_volume_7.png
+    - images/voice_volume_5.png
+    - images/voice_volume_4.png
+    - images/delete.png
+  # images/emoji/*
     - images/emoji/fuck27.png
     - images/emoji/fuck33.png
     - images/emoji/fuck32.png
@@ -173,6 +169,121 @@ flutter:
     - images/emoji/fuck03.png
     - images/emoji/fuck16.png
     - images/emoji/fuck02.png
+  # assets-generator-end
+#
+#    - images/img.jpg
+#    - images/voice_left.png
+#    - images/pwd.png
+#    - images/chat_room_left_voice.png
+#    - images/delete.png
+#
+#    - images/file_ico.png
+#    - images/photo_ico.png
+#    - images/transfer_ico.png
+#    - images/material_ico.png
+#    - images/camera_ico.png
+#
+#    - images/left_voice_1.png
+#    - images/left_voice_2.png
+#    - images/left_voice_3.png
+#    - images/left_voice_3.png
+#
+#    - images/voice_volume_7.png
+#    - images/voice_volume_6.png
+#    - images/voice_volume_5.png
+#    - images/voice_volume_4.png
+#    - images/voice_volume_3.png
+#    - images/voice_volume_2.png
+#    - images/voice_volume_1.png
+#    - images/cancel_voice.png
+#    - images/voice_too_short_ico.png
+#
+#
+#    #      表情图片资源
+#    - images/emoji/fuck27.png
+#    - images/emoji/fuck33.png
+#    - images/emoji/fuck32.png
+#    - images/emoji/fuck26.png
+#    - images/emoji/fuck30.png
+#    - images/emoji/fuck24.png
+#    - images/emoji/fuck18.png
+#    - images/emoji/fuck19.png
+#    - images/emoji/fuck31.png
+#    - images/emoji/fuck09.png
+#    - images/emoji/fuck35.png
+#    - images/emoji/fuck21.png
+#    - images/emoji/fuck20.png
+#    - images/emoji/fuck34.png
+#    - images/emoji/fuck08.png
+#    - images/emoji/fuck22.png
+#    - images/emoji/fuck37.png
+#    - images/emoji/fuck23.png
+#    - images/emoji/fuck93.png
+#    - images/emoji/fuck50.png
+#    - images/emoji/fuck79.png
+#    - images/emoji/fuck51.png
+#    - images/emoji/fuck45.png
+#    - images/emoji/fuck86.png
+#    - images/emoji/fuck90.png
+#    - images/emoji/fuck84.png
+#    - images/emoji/fuck53.png
+#    - images/emoji/fuck47.png
+#    - images/emoji/fuck46.png
+#    - images/emoji/fuck52.png
+#    - images/emoji/fuck85.png
+#    - images/emoji/fuck95.png
+#    - images/emoji/fuck81.png
+#    - images/emoji/fuck56.png
+#    - images/emoji/fuck42.png
+#    - images/emoji/fuck43.png
+#    - images/emoji/fuck57.png
+#    - images/emoji/fuck80.png
+#    - images/emoji/fuck94.png
+#    - images/emoji/fuck100.png
+#    - images/emoji/fuck82.png
+#    - images/emoji/fuck96.png
+#    - images/emoji/fuck69.png
+#    - images/emoji/fuck41.png
+#    - images/emoji/fuck55.png
+#    - images/emoji/fuck40.png
+#    - images/emoji/fuck68.png
+#    - images/emoji/fuck97.png
+#    - images/emoji/fuck83.png
+#    - images/emoji/fuck65.png
+#    - images/emoji/fuck71.png
+#    - images/emoji/fuck58.png
+#    - images/emoji/fuck64.png
+#    - images/emoji/fuck99.png
+#    - images/emoji/fuck66.png
+#    - images/emoji/fuck67.png
+#    - images/emoji/fuck98.png
+#    - images/emoji/fuck77.png
+#    - images/emoji/fuck63.png
+#    - images/emoji/fuck76.png
+#    - images/emoji/fuck48.png
+#    - images/emoji/defaultEmoji.png
+#    - images/emoji/fuck75.png
+#    - images/emoji/fuck61.png
+#    - images/emoji/fuck49.png
+#    - images/emoji/fuck06.png
+#    - images/emoji/fuck12.png
+#    - images/emoji/collection.png
+#    - images/emoji/fuck13.png
+#    - images/emoji/fuck07.png
+#    - images/emoji/fuck11.png
+#    - images/emoji/fuck05.png
+#    - images/emoji/fuck39.png
+#    - images/emoji/fuck38.png
+#    - images/emoji/fuck04.png
+#    - images/emoji/fuck10.png
+#    - images/emoji/fuck28.png
+#    - images/emoji/fuck14.png
+#    - images/emoji/fuck01.png
+#    - images/emoji/fuck15.png
+#    - images/emoji/fuck29.png
+#    - images/emoji/fuck03.png
+#    - images/emoji/fuck16.png
+#    - images/emoji/fuck02.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

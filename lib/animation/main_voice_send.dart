@@ -15,8 +15,47 @@ class _VoiceViewState extends State<VoiceView> {
   bool isUp = false;
   String textShow = "按住说话";
   String toastShow = "手指上滑,取消发送";
+  ///默认隐藏状态
+  bool isVoiceState = true;
 
-  bool isVoiceState = false; ///默认隐藏状态
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  showVoiceView() {
+    setState(() {
+      textShow = "松开结束";
+      isVoiceState = false;
+    });
+  }
+
+  hideVoiceView() {
+    setState(() {
+      textShow = "按住说话";
+      isVoiceState = true;
+    });
+
+    if(isUp){
+      print("取消发送");
+    }else{
+      print("进行发送");
+    }
+  }
+
+  moveVoiceView(){
+   // print(offset - start);
+    setState(() {
+      isUp = start - offset > 100 ? true : false;
+      if (isUp) {
+        textShow = "松开手指,取消发送";
+        toastShow = textShow;
+      } else {
+        textShow = "松开结束";
+        toastShow = "手指上滑,取消发送";
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,45 +63,16 @@ class _VoiceViewState extends State<VoiceView> {
       appBar: AppBar(
         title: Text("wwww"),
       ),
-      body: GestureDetector(
-        onVerticalDragStart: (details) {
-          start = details.globalPosition.dy;
-          setState(() {
-            textShow = "松开结束";
-          });
-        },
-        onVerticalDragEnd: (details) {
-          setState(() {
-            textShow = "按住说话";
-            isVoiceState = true;
-          });
-        },
-        onVerticalDragUpdate: (details) {
-          offset = details.globalPosition.dy;
-
-          print(offset - start);
-          setState(() {
-            isUp = start - offset > 100 ? true : false;
-            if (isUp) {
-              textShow = "松开手指,取消发送";
-              toastShow= textShow;
-              isVoiceState = false;
-            } else {
-              textShow = "松开结束";
-              toastShow = "手指上滑,取消发送";
-            }
-          });
-        },
-        child: Container(
-          width: double.infinity,
-          height: double.infinity,
-          color: Colors.white,
-          child: Offstage(
-            offstage: false,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Center(
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: Colors.white,
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              child: Offstage(
+                offstage: isVoiceState,
+                child: Center(
                   child: Opacity(
                     opacity: 0.5,
                     child: Container(
@@ -75,7 +85,7 @@ class _VoiceViewState extends State<VoiceView> {
                       child: Column(
                         children: <Widget>[
                           Container(
-                            margin:EdgeInsets.only(top: 10),
+                            margin: EdgeInsets.only(top: 10),
                             child: new Image.asset(
                               "images/voice_volume_7.png",
                               width: 100,
@@ -83,21 +93,44 @@ class _VoiceViewState extends State<VoiceView> {
                             ),
                           ),
                           Container(
-                            padding:EdgeInsets.only(right:20,left:20,top: 0),
+                            padding:
+                                EdgeInsets.only(right: 20, left: 20, top: 0),
                             child: Text(
-                              toastShow,style: TextStyle(color: Colors.white),),
+                              toastShow,
+                              style: TextStyle(color: Colors.white),
+                            ),
                           )
                         ],
                       ),
                     ),
                   ),
                 ),
-                Text(
-                  textShow,
-                ),
-              ],
+              ),
             ),
-          ),
+            GestureDetector(
+              onVerticalDragStart: (details) {
+                start = details.globalPosition.dy;
+                showVoiceView();
+              },
+              onVerticalDragEnd: (details) {
+                hideVoiceView();
+              },
+              onVerticalDragUpdate: (details) {
+                offset = details.globalPosition.dy;
+                moveVoiceView();
+              },
+              child: Container(
+                height: 60,
+                color: Colors.blue,
+                margin: EdgeInsets.fromLTRB(50, 0, 50, 20),
+                child: Center(
+                  child: Text(
+                    textShow,
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

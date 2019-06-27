@@ -62,6 +62,7 @@ flutter:
   assets:
   # assets-generator-begin
   # images/*
+    - images/search.png
     - images/transfer_ico.png
     - images/photo_ico.png
     - images/material_ico.png

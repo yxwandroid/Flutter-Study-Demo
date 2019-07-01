@@ -8,6 +8,7 @@ import 'package:flutter_app_demo/ui/image_demo_screen.dart';
 import 'package:flutter_app_demo/ui/listview_demo_screen.dart';
 import 'package:flutter_app_demo/ui/progress_dialog_demo_screen.dart';
 import 'package:flutter_app_demo/ui/refreshIndicator_demo_screen.dart';
+import 'package:flutter_app_demo/ui/stack_demo_screen.dart';
 import 'package:flutter_app_demo/ui/tab_bar_view_demo_screen.dart';
 import 'package:flutter_app_demo/ui/text_edit_demo_screen.dart';
 import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
@@ -51,6 +52,7 @@ class _HomeState extends State<Home> {
     demoList.add("ListView 使用");
     demoList.add("TextField 使用");
     demoList.add("Image 各种操作");
+    demoList.add("Stack 各种操作");
   }
 
   onItemClick(int index) {
@@ -88,11 +90,14 @@ class _HomeState extends State<Home> {
       case 10:
         RouteHelper.pushWidget(context, ListViewDemoScreen());
         break;
- case 11:
+      case 11:
         RouteHelper.pushWidget(context, TextFieldDemoScreen());
         break;
- case 12:
+      case 12:
         RouteHelper.pushWidget(context, ImageDemoScreen());
+        break;
+      case 13:
+        RouteHelper.pushWidget(context, StackDemoScreen());
         break;
 
       default:

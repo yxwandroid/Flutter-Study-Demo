@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/image/dragscale_screen.dart';
+import 'package:flutter_app_demo/image/image_pick_demo_screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
 import 'package:flutter_drag_scale/core/drag_scale_widget.dart';
 
@@ -18,9 +19,13 @@ class _ImageDemoScreenState extends State<ImageDemoScreen> {
       body: ListView(
         children: <Widget>[
           FlatButton(child: Text("图片的放大和缩小"),onPressed: (){
-
             RouteHelper.pushWidget(context, DragScaleDemoScreen());
-          },)
+          },),
+
+          FlatButton(child: Text("相册选择器"),onPressed: (){
+            RouteHelper.pushWidget(context, ImagePickDemoScreen());
+          },),
+
         ],
       ),
     );;

@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/model/ChatRoomMember.dart';
+import 'package:flutter_app_demo/r.dart';
 import '../color.dart';
 
 class GridViewDemo extends StatefulWidget {
@@ -26,76 +27,76 @@ List<ChatRoomMember> allChatList = [
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
   ChatRoomMember(
       wechatId: "www",
       nickname: "wilson",
       avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+      "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/images/WechatIMG1.jpeg"),
 
 
 
@@ -104,26 +105,28 @@ List<ChatRoomMember> allChatList = [
 
 class _GridViewDemoState extends State<GridViewDemo> {
   List<ChatRoomMember> currentList = new List();
+  List<ChatRoomMember> allList = new List();
   bool isSHowMore = true;
   bool isMoreClickState = false;
   String showText = "查看更多群成员";
   @override
   void initState() {
+    initView();
+  }
+
+  initView(){
+    allList = allChatList;
     //    初始化数据
-    if (allChatList.length >= 10) {
+    if (allList.length >= 10) {
       //取10个 同时显示加载更多控件
-      currentList = allChatList.sublist(0, 8);
+      currentList = allList.sublist(0, 8);
       isSHowMore = false;
     } else {
-      currentList = allChatList;
+      currentList = allList;
       isSHowMore = true;
     }
-
-    currentList
-        .add(ChatRoomMember(wechatId: "add", nickname: "", avatar: "add"));
-
-    currentList
-        .add(ChatRoomMember(wechatId: "", nickname: "", avatar: "subtract"));
+    currentList.add(ChatRoomMember(wechatId: "", nickname: "", avatar: R.imagesGroupAddIco));
+    currentList.add(ChatRoomMember(wechatId: "", nickname: "", avatar: R.imagesGroupDeleteIco));
     super.initState();
   }
 
@@ -134,26 +137,54 @@ class _GridViewDemoState extends State<GridViewDemo> {
       setState(() {
         isMoreClickState = true;
         showText = "收起";
-        currentList = allChatList;
-        currentList.add(
-            ChatRoomMember(wechatId: "", nickname: "", avatar: "subtract"));
+        currentList.clear();
+        allList.forEach((item){
+          currentList.add(item);
+        });
+
       });
     } else {
       setState(() {
         isMoreClickState = false;
         showText = "查看更多群成员";
-        currentList = allChatList; //.sublist(0, 8);
-        currentList
-            .add(ChatRoomMember(wechatId: "add", nickname: "", avatar: "add"));
+        currentList = allList.sublist(0, 8);
 
-        currentList.add(
-            ChatRoomMember(wechatId: "", nickname: "", avatar: "subtract"));
         isSHowMore = false;
       });
     }
+    currentList.add(ChatRoomMember(wechatId: "", nickname: "", avatar: R.imagesGroupAddIco));
+    currentList.add(ChatRoomMember(wechatId: "", nickname: "", avatar: R.imagesGroupDeleteIco));
   }
 
-  Widget buildGridViewItemWidget(ChatRoomMember member) {
+
+
+  ClipOval buildDelete(ChatRoomMember member) {
+    return ClipOval(child: SizedBox(child: Image.asset(member.avatar),),);
+  }
+
+  ClipOval buildAdd(ChatRoomMember member) {
+    return ClipOval(child: SizedBox(child: Image.asset(member.avatar),),);
+  }
+
+  ClipOval buildAvatar(ChatRoomMember member) {
+    return ClipOval(child: SizedBox(child: CachedNetworkImage(
+      imageUrl: member.avatar,
+      placeholder: (context, url) =>
+          SizedBox(width: 25, height: 25, child: CircularProgressIndicator(),),
+      errorWidget: (context, url, error) => new Icon(Icons.error),),),);
+  }
+
+  ClipOval buildClipOval(ChatRoomMember member) {
+    if (member.avatar == R.imagesGroupAddIco) {
+      return buildAdd(member);
+    } else if (member.avatar == R.imagesGroupDeleteIco) {
+      return buildDelete(member);
+    } else {
+      return buildAvatar(member);
+    }
+  }
+
+  Widget buildGridViewItem(ChatRoomMember member) {
     return GestureDetector(
       onTap: () {
         onHeaderClick();
@@ -171,19 +202,7 @@ class _GridViewDemoState extends State<GridViewDemo> {
               border: new Border.all(
                   width: 0.1, color: Color(AppColor.groupTextColor)),
             ),
-            child: ClipOval(
-              child: SizedBox(
-                child: CachedNetworkImage(
-                  imageUrl: member.avatar,
-                  placeholder: (context, url) => SizedBox(
-                        width: 25,
-                        height: 25,
-                        child: CircularProgressIndicator(),
-                      ),
-                  errorWidget: (context, url, error) => new Icon(Icons.error),
-                ),
-              ),
-            ),
+            child:buildClipOval(member),
           ),
           Text(
             member.nickname,
@@ -223,7 +242,7 @@ class _GridViewDemoState extends State<GridViewDemo> {
         currentList.length,
         (index) {
           var member = currentList.elementAt(index);
-          return buildGridViewItemWidget(member);
+          return buildGridViewItem(member);
         },
       ),
     );

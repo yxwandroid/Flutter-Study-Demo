@@ -77,6 +77,7 @@ flutter:
     - images/voice_volume_1.png
     - images/voice_volume_3.png
     - images/left_voice_1.png
+    - images/group_delete_ico.png
     - images/voice_volume_2.png
     - images/voice_volume_6.png
     - images/cancel_voice.png
@@ -85,6 +86,7 @@ flutter:
     - images/voice_volume_5.png
     - images/voice_volume_4.png
     - images/delete.png
+    - images/group_add_ico.png
     - images/WechatIMG1.jpeg
   # images/emoji/*
     - images/emoji/fuck27.png

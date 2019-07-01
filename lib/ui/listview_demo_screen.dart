@@ -25,7 +25,56 @@ class ListViewDemoScreenState extends State<ListViewDemoScreen>{
 
   }
 
-  @override
+
+   Widget getItemView(int postion) {
+     return new ListTile(
+       onTap: () {
+         Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
+           print("wilson 点击的数据");
+           print(postion);
+         }));
+       },
+       leading: new CircleAvatar(
+         radius: 20.0,
+         backgroundImage: new NetworkImage(
+             'https://upload.jianshu.io/users/upload_avatars/7700793/dbcf94ba-9e63-4fcf-aa77-361644dd5a87?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240'),
+       ),
+       title: new Text("班主任"),
+       subtitle: new Text("你高考考了满分你知道吗？"),
+       trailing: new Container(
+         child: Column(
+           children: <Widget>[
+             new Container(
+               margin: EdgeInsets.fromLTRB(0, 12, 5, 0),
+               child: Text(
+
+                 "9:00",
+                 style: TextStyle(fontSize: 12),
+               ),
+             ),
+             new Container(
+               margin: EdgeInsets.fromLTRB(0, 2, 5, 0),
+               width: 20,
+               height: 20,
+               decoration: BoxDecoration(
+                 borderRadius: BorderRadius.circular(10), //圆角
+                 color: Colors.red, //圆点背景颜色
+               ),
+               child: new Text(
+                 "1",
+                 textAlign: TextAlign.center,
+                 style: TextStyle(
+                   fontSize: 16,
+                 ),
+               ),
+             )
+           ],
+         ),
+       ),
+     );
+   }
+
+   @override
   Widget build(BuildContext context) {
     final title = "Dismissing Items";
     return Scaffold(
@@ -51,9 +100,7 @@ class ListViewDemoScreenState extends State<ListViewDemoScreen>{
               background: new Container(
                 color: Colors.red,
               ),
-              child: new ListTile(
-                title: new Text("$item"),
-              ));
+              child: getItemView(index));
         },
       ),
     );

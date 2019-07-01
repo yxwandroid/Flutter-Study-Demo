@@ -1,39 +1,18 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
+class TextFieldDemoScreen extends StatefulWidget {
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _TextFieldDemoScreenState createState() => _TextFieldDemoScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _TextFieldDemoScreenState extends State<TextFieldDemoScreen> {
 
   final TextEditingController controller = new TextEditingController();
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-
-
   }
   @override
   Widget build(BuildContext context) {
@@ -42,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
     print("build");
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("textField使用"),
       ),
       body: Center(
         child: ListView(

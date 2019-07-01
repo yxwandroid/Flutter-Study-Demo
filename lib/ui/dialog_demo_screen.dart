@@ -32,9 +32,25 @@ class DialogDemoScreenState extends State<DialogDemoScreen> {
                   child: Text("Android 风格 对话框")),
               FlatButton(
                   onPressed: () {
-                    showAndroidAlertDialog(context);
+                    showMySimpleDialog(context);
                   },
-                  child: Text("IOS 风格 对话框")),
+                  child: Text("android 风格 对话框")),
+              FlatButton(
+                  onPressed: () {
+                    _displayDialog();
+                  },
+                  child: Text("IOS 风格输入框")),
+              FlatButton(
+                  onPressed: () {
+                    showAlertDialog(context);
+                  },
+                  child: Text("IOS  对话框")),
+              FlatButton(
+                  onPressed: () {
+                    showErrorAlertDialog(context);
+                  },
+                  child: Text("IOS  对话框")),
+
             ],
           ),
         ),
@@ -89,6 +105,151 @@ class DialogDemoScreenState extends State<DialogDemoScreen> {
                   )),
             ));
   }
+
+
+
+
+  Future<void> showAlertDialog(context) async {
+    return showDialog<Null>(
+        context: context,
+        barrierDismissible: true,
+        builder: (context) {
+          return new Center(
+            child: new CupertinoAlertDialog(
+              content: new SingleChildScrollView(
+                child: ListBody(
+                  children: <Widget>[
+                    new Column(
+                      children: <Widget>[
+                        new Container(
+                          //new EdgeInsets.fromLTRB(20, 100.0, 20, 0),
+//                      margin: new EdgeInsets.fromLTRB(0, 0.0, 0, 20),
+                          width: 50,
+                          height: 50,
+                          child: Image.asset("images/verify_code_su.png"),
+                        ),
+                        new Text(
+                          "xxx",
+                          style: new TextStyle(
+                            color: Color(0xff898996),
+                          ),
+                        )
+                      ],
+                    ),
+                    new Container(
+                      margin: new EdgeInsets.fromLTRB(0, 10.0, 0, 0),
+                      child: Text("xxx:"),
+                    ),
+                    new Container(
+                      margin: new EdgeInsets.fromLTRB(0, 10.0, 0, 0),
+                      child: Text(
+                        "xxxx",
+                        style: TextStyle(
+                          fontSize: 17,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              actions: <Widget>[
+                CupertinoDialogAction(
+                  child: Text(
+                    "返回重试",
+                    style: TextStyle(color: Color(0xff181830)),
+                  ),
+                  onPressed: () {
+                    print("取消");
+                    Navigator.of(context).pop();
+                  },
+                ),
+                CupertinoDialogAction(
+                  child: Text("确定登录"),
+                  onPressed: () {
+                    print("确定");
+                    Navigator.of(context).pop();
+                  },
+                ),
+              ],
+            ),
+          );
+        });
+  }
+
+  Future<void> showErrorAlertDialog(context) async {
+    return showDialog<Null>(
+        context: context,
+        barrierDismissible: true,
+        builder: (context) {
+          return new Center(
+            child: new CupertinoAlertDialog(
+              content: new SingleChildScrollView(
+                child: ListBody(
+                  children: <Widget>[
+                    new Column(
+                      children: <Widget>[
+                        new Container(
+                          width: 50,
+                          height: 50,
+                          child: Image.asset("images/verify_code_err.png"),
+                        ),
+                        new Text(
+                          "xxx",
+                          style: new TextStyle(
+                            color: Color(0xff898996),
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              actions: <Widget>[
+                CupertinoDialogAction(
+                  child: Text(
+                    "返回重试",
+                  ),
+                  onPressed: () {
+                    print("取消");
+                    Navigator.of(context).pop();
+                  },
+                ),
+              ],
+            ),
+          );
+        });
+  }
+
+  void showMySimpleDialog(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return new SimpleDialog(
+            title: new Text("SimpleDialog"),
+            children: <Widget>[
+              new SimpleDialogOption(
+                child: new Text("SimpleDialogOption One"),
+                onPressed: () {
+                  Navigator.of(context).pop("SimpleDialogOption One");
+                },
+              ),
+              new SimpleDialogOption(
+                child: new Text("SimpleDialogOption Two"),
+                onPressed: () {
+                  Navigator.of(context).pop("SimpleDialogOption Two");
+                },
+              ),
+              new SimpleDialogOption(
+                child: new Text("SimpleDialogOption Three"),
+                onPressed: () {
+                  Navigator.of(context).pop("SimpleDialogOption Three");
+                },
+              ),
+            ],
+          );
+        });
+  }
+
 
 
   Future<void> _displayDialog() async {
@@ -151,21 +312,5 @@ class DialogDemoScreenState extends State<DialogDemoScreen> {
     super.initState();
   }
 
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-  }
 
-  @override
-  void didUpdateWidget(DialogDemoScreen oldWidget) {
-    // TODO: implement didUpdateWidget
-    super.didUpdateWidget(oldWidget);
-  }
-
-  @override
-  void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
-    super.didChangeDependencies();
-  }
 }

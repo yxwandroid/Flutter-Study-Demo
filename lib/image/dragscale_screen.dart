@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drag_scale/flutter_drag_scale.dart';
+import 'package:flutter_drag_scale/core/drag_scale_widget.dart';
 
-void main() => runApp(MyApp());
+class DragScaleDemoScreen extends StatefulWidget {
+  @override
+  DragScaleDemoScreenState createState() {
+    return DragScaleDemoScreenState();
+  }
+}
 
-class MyApp extends StatelessWidget {
+class DragScaleDemoScreenState extends State<DragScaleDemoScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,6 +23,6 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-    );
+    );;
   }
 }

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/widget/progress_dialog.dart';
 
-
-
-
 class ProgressDialogDemoScreen extends StatefulWidget {
 
 
@@ -43,6 +40,8 @@ class _ProgressDialogState extends State<ProgressDialogDemoScreen> {
       ),
     );
   }
+
+
 
   Future<Null> _onRefresh() async {
     setState(() {

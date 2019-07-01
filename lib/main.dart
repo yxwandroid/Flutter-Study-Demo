@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/ui/dialog_demo.dart';
 import 'package:flutter_app_demo/ui/expansion_tile_sample_demo.dart';
 import 'package:flutter_app_demo/ui/grid_view_demo.dart';
+import 'package:flutter_app_demo/ui/progress_dialog_demo.dart';
 import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
 import 'animation/main_voice_send.dart';
 import 'model/ChatRoomMember.dart';
@@ -31,6 +32,7 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     demoList.add("GridView使用");
+    demoList.add("加载动画");
   }
 
 
@@ -38,6 +40,9 @@ class _HomeState extends State<Home> {
     switch(index){
       case 0:
         GridViewDemo.enter(context);
+        break;
+      case 1:
+        ProgressDialogDemo.enter(context);
         break;
       default:
         print("index  "+ index.toString());

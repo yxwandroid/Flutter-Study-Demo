@@ -35,11 +35,12 @@ class _HomeState extends State<Home> {
     demoList.add("GridView使用");
     demoList.add("加载动画");
     demoList.add("Container 使用");
+    demoList.add("ViewPagerIndicator 使用");
+    demoList.add("Dialog 使用");
   }
 
-
-  onItemClick(int index){
-    switch(index){
+  onItemClick(int index) {
+    switch (index) {
       case 0:
         GridViewDemo.enter(context);
         break;
@@ -49,14 +50,21 @@ class _HomeState extends State<Home> {
       case 2:
         ContainerDemo.enter(context);
         break;
-      default:
-        print("index  "+ index.toString());
+      case 3:
+        ViewPagerIndicatorDemo.enter(context);
+        break;
+      case 4:
+        DialogDemo.enter(context);
+        break;
 
+      default:
+        print("index  " + index.toString());
     }
   }
+
   Widget buildItem(int index) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         onItemClick(index);
       },
       child: Container(
@@ -65,7 +73,7 @@ class _HomeState extends State<Home> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
-                 margin: EdgeInsets.all(10),
+                  margin: EdgeInsets.all(10),
                   child: Text(demoList.elementAt(index))),
               Divider(height: 1.0, color: Colors.black),
             ],
@@ -83,7 +91,6 @@ class _HomeState extends State<Home> {
     );
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,13 +100,8 @@ class _HomeState extends State<Home> {
       body: buildListView(),
     );
   }
-
-
 }
 
-
-
 //      home: VoiceView(),
-//      home: ViewPagerIndicatorDemo(),
 //      home: DialogDemo(),
 //home: ExpansionTileSample(),

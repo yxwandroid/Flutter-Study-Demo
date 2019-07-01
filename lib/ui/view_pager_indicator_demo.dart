@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/model/reply_model.dart';
 import 'package:flutter_app_demo/widget/search_widget.dart';
 
-
 class ViewPagerIndicatorDemo extends StatefulWidget {
+  static enter(BuildContext context) {
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext content) => ViewPagerIndicatorDemo()));
+  }
+
   @override
   _ViewPagerIndicatorDemoState createState() {
     return _ViewPagerIndicatorDemoState();
@@ -22,14 +28,16 @@ class _ViewPagerIndicatorDemoState extends State<ViewPagerIndicatorDemo>
     // TODO: implement initState
     super.initState();
     replyModes = <ReplyModel1>[
-      new ReplyModel1(
-          groupName: "嘻嘻",
-          replys: [new ReplysListBean(title: "早上好"),new ReplysListBean(title: "早上好"),new ReplysListBean(title: "早上好")]
-      ),
-      new ReplyModel1(
-          groupName: "哈哈",
-          replys: [new ReplysListBean(title: "22"),new ReplysListBean(title: "w"),new ReplysListBean(title: "e")]
-      ),
+      new ReplyModel1(groupName: "嘻嘻", replys: [
+        new ReplysListBean(title: "早上好"),
+        new ReplysListBean(title: "早上好"),
+        new ReplysListBean(title: "早上好")
+      ]),
+      new ReplyModel1(groupName: "哈哈", replys: [
+        new ReplysListBean(title: "22"),
+        new ReplysListBean(title: "w"),
+        new ReplysListBean(title: "e")
+      ]),
     ];
 
     oneList = buildListView();

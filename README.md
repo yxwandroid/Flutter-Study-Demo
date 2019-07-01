@@ -10,4 +10,7 @@
 
 
 
-1. 实现类型微信群详情界面
+1. Flutter使用GridView实现类型微信群详情界面
+
+![](https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/gridview_demo.gif)
+

@@ -5,6 +5,7 @@ import 'package:flutter_app_demo/ui/grid_view_demo.dart';
 import 'package:flutter_app_demo/ui/progress_dialog_demo.dart';
 import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
 import 'animation/main_voice_send.dart';
+import 'demo/container_demo.dart';
 import 'model/ChatRoomMember.dart';
 
 void main() => runApp(MyApp());
@@ -33,6 +34,7 @@ class _HomeState extends State<Home> {
     super.initState();
     demoList.add("GridView使用");
     demoList.add("加载动画");
+    demoList.add("Container 使用");
   }
 
 
@@ -43,6 +45,9 @@ class _HomeState extends State<Home> {
         break;
       case 1:
         ProgressDialogDemo.enter(context);
+        break;
+      case 2:
+        ContainerDemo.enter(context);
         break;
       default:
         print("index  "+ index.toString());
@@ -91,6 +96,9 @@ class _HomeState extends State<Home> {
 
 
 }
+
+
+
 //      home: VoiceView(),
 //      home: ViewPagerIndicatorDemo(),
 //      home: DialogDemo(),

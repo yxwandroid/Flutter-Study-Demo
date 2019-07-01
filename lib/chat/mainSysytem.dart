@@ -3,31 +3,18 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/utils/utils.dart';
 
-void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class MyChat extends StatefulWidget {
+  MyChat({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MyChatState createState() => _MyChatState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyChatState extends State<MyChat> {
   static String avatar;
   @override
   void initState() {
@@ -54,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: buildMemberChange(),
+      body: buildChatLeftVoice(),
     );
   }
 

@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class DialogDemo extends StatefulWidget {
+class DialogDemoScreen extends StatefulWidget {
   static enter(BuildContext context) {
     return Navigator.push(context,
-        MaterialPageRoute(builder: (BuildContext content) => DialogDemo()));
+        MaterialPageRoute(builder: (BuildContext content) => DialogDemoScreen()));
   }
 
   @override
-  DialogDemoState createState() => new DialogDemoState();
+  DialogDemoScreenState createState() => new DialogDemoScreenState();
 }
 
-class DialogDemoState extends State<DialogDemo> {
+class DialogDemoScreenState extends State<DialogDemoScreen> {
 
 
   var _groupTextFieldController = TextEditingController();
@@ -158,7 +158,7 @@ class DialogDemoState extends State<DialogDemo> {
   }
 
   @override
-  void didUpdateWidget(DialogDemo oldWidget) {
+  void didUpdateWidget(DialogDemoScreen oldWidget) {
     // TODO: implement didUpdateWidget
     super.didUpdateWidget(oldWidget);
   }

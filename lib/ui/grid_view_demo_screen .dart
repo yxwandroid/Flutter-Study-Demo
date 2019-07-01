@@ -4,21 +4,21 @@ import 'package:flutter_app_demo/model/ChatRoomMember.dart';
 import 'package:flutter_app_demo/r.dart';
 import '../color.dart';
 
-class GridViewDemo extends StatefulWidget {
+class GridViewDemoScreen extends StatefulWidget {
 
   static enter(BuildContext context) {
     return Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (BuildContext content) => GridViewDemo()));
+            builder: (BuildContext content) => GridViewDemoScreen()));
   }
 
   @override
-  _GridViewDemoState createState() {
-    return _GridViewDemoState();
+  _GridViewDemoScreenState createState() {
+    return _GridViewDemoScreenState();
   }
 
-  GridViewDemo();
+  GridViewDemoScreen();
 }
 
 
@@ -103,7 +103,7 @@ List<ChatRoomMember> allChatList = [
 
 ];
 
-class _GridViewDemoState extends State<GridViewDemo> {
+class _GridViewDemoScreenState extends State<GridViewDemoScreen> {
   List<ChatRoomMember> currentList = new List();
   List<ChatRoomMember> allList = new List();
   bool isSHowMore = true;

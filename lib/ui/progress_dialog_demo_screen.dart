@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/widget/progress_dialog.dart';
-//import 'package:flutter_loading/Toast.dart';
-//import 'package:flutter_loading/view_loading.dart';
 
 
 
 
-class ProgressDialogDemo extends StatefulWidget {
+class ProgressDialogDemoScreen extends StatefulWidget {
 
 
   static enter(BuildContext context) {
     return Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (BuildContext content) => ProgressDialogDemo(title: "加载动画",)));
+            builder: (BuildContext content) => ProgressDialogDemoScreen(title: "加载动画",)));
   }
 
-  ProgressDialogDemo({Key key, this.title}) : super(key: key);
+  ProgressDialogDemoScreen({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -24,7 +22,7 @@ class ProgressDialogDemo extends StatefulWidget {
   _ProgressDialogState createState() => _ProgressDialogState();
 }
 
-class _ProgressDialogState extends State<ProgressDialogDemo> {
+class _ProgressDialogState extends State<ProgressDialogDemoScreen> {
   bool _loading = false;
 
   @override

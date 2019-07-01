@@ -3,31 +3,21 @@ import 'package:flutter_app_demo/utils/emoji_util.dart';
 import 'package:flutter_app_demo/utils/emoticon_widget.dart';
 import 'package:page_indicator/page_indicator.dart';
 
-void main() => runApp(new MyApp());
+class EmojiScreen extends StatefulWidget {
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Flutter Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+  static enter(BuildContext context) {
+    return Navigator.push(context,
+        MaterialPageRoute(builder: (BuildContext content) => EmojiScreen(title: "仿微信发送表情组件",)));
   }
-}
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  EmojiScreen({Key key, this.title}) : super(key: key);
   final String title;
 
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _EmojiScreenState createState() => new _EmojiScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _EmojiScreenState extends State<EmojiScreen> {
 
   @override
   void initState() {

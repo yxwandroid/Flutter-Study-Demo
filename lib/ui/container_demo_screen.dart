@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
-class ContainerDemo extends StatefulWidget {
+class ContainerDemoScreen extends StatefulWidget {
   static enter(BuildContext context) {
     return Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (BuildContext content) => ContainerDemo(
+            builder: (BuildContext content) => ContainerDemoScreen(
                   title: "Container使用",
                 )));
   }
 
-  ContainerDemo({Key key, this.title}) : super(key: key);
+  ContainerDemoScreen({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  ContainerDemoState createState() => ContainerDemoState();
+  ContainerDemoScreenState createState() => ContainerDemoScreenState();
 }
 
-class ContainerDemoState extends State<ContainerDemo> {
+class ContainerDemoScreenState extends State<ContainerDemoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

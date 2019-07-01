@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
 
-class ExpansionTileSample extends StatefulWidget {
+class ExpansionTileDemoScreen extends StatefulWidget {
+
+
+  static enter(BuildContext context) {
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext content) => ExpansionTileDemoScreen()));
+  }
   @override
-  _ExpansionTileSampleState createState() {
-    return _ExpansionTileSampleState();
+  _ExpansionTileDemoScreenState createState() {
+    return _ExpansionTileDemoScreenState();
   }
 }
 
-class _ExpansionTileSampleState extends State<ExpansionTileSample> {
+class _ExpansionTileDemoScreenState extends State<ExpansionTileDemoScreen> {
   final List<ReplyModel> data = <ReplyModel>[
     new ReplyModel(
-      '常用回复',
+      '常用',
       <String>[
         "价格可以优惠吗",
         "价格可以优惠吗",
@@ -39,6 +47,7 @@ class _ExpansionTileSampleState extends State<ExpansionTileSample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("expansion title 使用"),),
       body: ListView.builder(
         itemBuilder: (BuildContext context, int index) =>
         new ReplyItem(data[index], onItemClick),

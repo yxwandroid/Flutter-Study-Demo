@@ -2,14 +2,20 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class RefreshIndicatorDemo extends StatefulWidget {
+class RefreshIndicatorDemoScreen extends StatefulWidget {
+  static enter(BuildContext context) {
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext content) => RefreshIndicatorDemoScreen()));
+  }
   @override
   State<StatefulWidget> createState() {
-    return new RefreshIndicatorDemoState();
+    return new RefreshIndicatorDemoScreenState();
   }
 }
 
-class RefreshIndicatorDemoState extends State<RefreshIndicatorDemo> {
+class RefreshIndicatorDemoScreenState extends State<RefreshIndicatorDemoScreen> {
 
   ScrollController _controller = ScrollController();
   List<String> listData = new List();
@@ -19,28 +25,11 @@ class RefreshIndicatorDemoState extends State<RefreshIndicatorDemo> {
     // TODO: implement initState
     super.initState();
 
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
-    listData.add("2");
+    for(int i=0;i<=50;i++){
+      listData.add(i.toString());
+    }
+
+
     _controller.addListener((){
 
       if (_controller.position.pixels == _controller.position.minScrollExtent) {
@@ -85,8 +74,11 @@ class RefreshIndicatorDemoState extends State<RefreshIndicatorDemo> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: RefreshIndicator(child: buildListView(), onRefresh: _handleRefresh),);
+    return Scaffold(
+      appBar:  AppBar(title: Text("下拉刷新"),),
+        body: Container(
+          child: RefreshIndicator(child: buildListView(), onRefresh: _handleRefresh),),
+    );
 //        child: RefreshIndicator(child: buildListView(), onRefresh: _handleRefresh),);
   }
 }

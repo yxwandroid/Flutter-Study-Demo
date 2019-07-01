@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_demo/ui/dialog_demo.dart';
-import 'package:flutter_app_demo/ui/expansion_tile_sample_demo.dart';
-import 'package:flutter_app_demo/ui/grid_view_demo.dart';
-import 'package:flutter_app_demo/ui/progress_dialog_demo.dart';
+import 'package:flutter_app_demo/ui/container_demo_screen.dart';
+import 'package:flutter_app_demo/ui/dialog_demo_screen.dart';
+import 'package:flutter_app_demo/ui/expansion_title_demo_screen.dart';
+import 'package:flutter_app_demo/ui/grid_view_demo_screen .dart';
+import 'package:flutter_app_demo/chat/mainSysytem.dart';
+import 'package:flutter_app_demo/ui/listview_demo_screen.dart';
+import 'package:flutter_app_demo/ui/progress_dialog_demo_screen.dart';
+import 'package:flutter_app_demo/ui/refreshIndicator_demo_screen.dart';
+import 'package:flutter_app_demo/ui/tab_bar_view_demo_screen.dart';
 import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
-import 'animation/main_voice_send.dart';
-import 'demo/container_demo.dart';
-import 'model/ChatRoomMember.dart';
+import 'package:flutter_app_demo/ui/emoji_screen.dart';
+import 'package:flutter_app_demo/utils/route_helper.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,24 +41,48 @@ class _HomeState extends State<Home> {
     demoList.add("Container 使用");
     demoList.add("ViewPagerIndicator 使用");
     demoList.add("Dialog 使用");
+    demoList.add("仿微信发送表情组件");
+    demoList.add("ExpansionTileDemo");
+    demoList.add("ListView 下拉刷新");
+    demoList.add("TabBar使用");
+    demoList.add("ViewPagerIndicator 使用");
+    demoList.add("ListView 使用");
   }
 
   onItemClick(int index) {
     switch (index) {
       case 0:
-        GridViewDemo.enter(context);
+        GridViewDemoScreen.enter(context);
         break;
       case 1:
-        ProgressDialogDemo.enter(context);
+        RouteHelper.pushWidget(context, ProgressDialogDemoScreen());
         break;
       case 2:
-        ContainerDemo.enter(context);
+        RouteHelper.pushWidget(context, ContainerDemoScreen());
         break;
       case 3:
-        ViewPagerIndicatorDemo.enter(context);
+        RouteHelper.pushWidget(context, ViewPagerIndicatorDemo());
         break;
       case 4:
-        DialogDemo.enter(context);
+        RouteHelper.pushWidget(context, DialogDemoScreen());
+        break;
+      case 5:
+        RouteHelper.pushWidget(context, EmojiScreen());
+        break;
+      case 6:
+        RouteHelper.pushWidget(context, ExpansionTileDemoScreen());
+        break;
+      case 7:
+        RouteHelper.pushWidget(context, RefreshIndicatorDemoScreen());
+        break;
+      case 8:
+        RouteHelper.pushWidget(context, TabBarViewDemoScreen());
+        break;
+      case 9:
+        RouteHelper.pushWidget(context, ViewPagerIndicatorDemo());
+        break;
+      case 10:
+        RouteHelper.pushWidget(context, ListViewDemoScreen());
         break;
 
       default:

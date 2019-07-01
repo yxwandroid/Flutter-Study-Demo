@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 
-class TabBarViewDemo extends StatefulWidget {
+class TabBarViewDemoScreen extends StatefulWidget {
+
+
+  static enter(BuildContext context) {
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext content) => TabBarViewDemoScreen()));
+  }
   @override
-  _TabBarViewDemoState createState() {
-    return _TabBarViewDemoState();
+  _TabBarViewDemoScreenState createState() {
+    return _TabBarViewDemoScreenState();
   }
 }
 
-class _TabBarViewDemoState extends State<TabBarViewDemo> {
+class _TabBarViewDemoScreenState extends State<TabBarViewDemoScreen> {
   final List<Text> tabTexts = <Text>[
     new Text("eee", style: new TextStyle(fontSize: 20.0)),
     new Text("22", style: new TextStyle(fontSize: 20.0)),

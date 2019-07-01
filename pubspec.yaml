@@ -62,7 +62,6 @@ flutter:
   assets:
   # assets-generator-begin
   # images/*
-    - images/search.png
     - images/transfer_ico.png
     - images/photo_ico.png
     - images/material_ico.png
@@ -71,6 +70,7 @@ flutter:
     - images/img.jpg
     - images/camera_ico.png
     - images/chat_room_left_voice.png
+    - images/search.png
     - images/left_voice_3.png
     - images/pwd.png
     - images/left_voice_2.png
@@ -85,6 +85,7 @@ flutter:
     - images/voice_volume_5.png
     - images/voice_volume_4.png
     - images/delete.png
+    - images/WechatIMG1.jpeg
   # images/emoji/*
     - images/emoji/fuck27.png
     - images/emoji/fuck33.png

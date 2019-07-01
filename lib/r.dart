@@ -15,6 +15,8 @@ class R {
   static final String imagesCameraIco = 'images/camera_ico.png';
   /// ![](http://127.0.0.1:9528/images/chat_room_left_voice.png)
   static final String imagesChatRoomLeftVoice = 'images/chat_room_left_voice.png';
+  /// ![](http://127.0.0.1:9528/images/search.png)
+  static final String imagesSearch = 'images/search.png';
   /// ![](http://127.0.0.1:9528/images/left_voice_3.png)
   static final String imagesLeftVoice3 = 'images/left_voice_3.png';
   /// ![](http://127.0.0.1:9528/images/pwd.png)
@@ -43,6 +45,8 @@ class R {
   static final String imagesVoiceVolume4 = 'images/voice_volume_4.png';
   /// ![](http://127.0.0.1:9528/images/delete.png)
   static final String imagesDelete = 'images/delete.png';
+  /// ![](http://127.0.0.1:9528/images/WechatIMG1.jpeg)
+  static final String imagesWechatIMG1 = 'images/WechatIMG1.jpeg';
   /// ![](http://127.0.0.1:9528/images/emoji/fuck27.png)
   static final String imagesEmojiFuck27 = 'images/emoji/fuck27.png';
   /// ![](http://127.0.0.1:9528/images/emoji/fuck33.png)

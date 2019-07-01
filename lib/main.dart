@@ -8,100 +8,85 @@ import 'model/ChatRoomMember.dart';
 
 void main() => runApp(MyApp());
 
-List<ChatRoomMember> allChatList = [
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-          "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-  ChatRoomMember(
-      wechatId: "www",
-      nickname: "wilson",
-      avatar:
-      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
-
-
-
-
-];
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      //      home: VoiceView(),
-      //      home: ViewPagerIndicatorDemo(),
-      //      home: DialogDemo(),
-      home: GridViewDemo(allChatList),
-      //      home: ExpansionTileSample(),
+      home: Home(),
     );
   }
 }
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() {
+    return _HomeState();
+  }
+}
+
+class _HomeState extends State<Home> {
+  List<String> demoList = List();
+
+  @override
+  void initState() {
+    super.initState();
+    demoList.add("GridView使用");
+  }
+
+
+  onItemClick(int index){
+    switch(index){
+      case 0:
+        GridViewDemo.enter(context);
+        break;
+      default:
+        print("index  "+ index.toString());
+
+    }
+  }
+  Widget buildItem(int index) {
+    return GestureDetector(
+      onTap: (){
+        onItemClick(index);
+      },
+      child: Container(
+          width: double.infinity,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                 margin: EdgeInsets.all(10),
+                  child: Text(demoList.elementAt(index))),
+              Divider(height: 1.0, color: Colors.black),
+            ],
+          )),
+    );
+  }
+
+  ListView buildListView() {
+    return ListView.builder(
+      padding: new EdgeInsets.all(10),
+      itemCount: demoList.length,
+      itemBuilder: (BuildContext context, int index) {
+        return buildItem(index);
+      },
+    );
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Flutter 学习"),
+      ),
+      body: buildListView(),
+    );
+  }
+
+
+}
+//      home: VoiceView(),
+//      home: ViewPagerIndicatorDemo(),
+//      home: DialogDemo(),
+//home: ExpansionTileSample(),

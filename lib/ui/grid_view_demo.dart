@@ -1,20 +1,106 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/model/ChatRoomMember.dart';
-import 'package:flutter_app_demo/r.dart';
-
 import '../color.dart';
 
 class GridViewDemo extends StatefulWidget {
-  List<ChatRoomMember> allChatList;
+
+  static enter(BuildContext context) {
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext content) => GridViewDemo()));
+  }
 
   @override
   _GridViewDemoState createState() {
     return _GridViewDemoState();
   }
 
-  GridViewDemo(this.allChatList);
+  GridViewDemo();
 }
+
+
+List<ChatRoomMember> allChatList = [
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+  ChatRoomMember(
+      wechatId: "www",
+      nickname: "wilson",
+      avatar:
+      "http://wx.qlogo.cn/mmhead/ver_1/j5PyKKAEPBpAjKPZUQWXNUUCmGH9ZyMKNFpMAgwRxbpjsOmBF3cQXPb0IJkG1yArRq7SmSZYM2obcm4am7B1I2vNLfz48o6GUbcFxWRMPps/0"),
+
+
+
+
+];
 
 class _GridViewDemoState extends State<GridViewDemo> {
   List<ChatRoomMember> currentList = new List();
@@ -24,12 +110,12 @@ class _GridViewDemoState extends State<GridViewDemo> {
   @override
   void initState() {
     //    初始化数据
-    if (widget.allChatList.length >= 10) {
+    if (allChatList.length >= 10) {
       //取10个 同时显示加载更多控件
-      currentList = widget.allChatList.sublist(0, 8);
+      currentList = allChatList.sublist(0, 8);
       isSHowMore = false;
     } else {
-      currentList = widget.allChatList;
+      currentList = allChatList;
       isSHowMore = true;
     }
 
@@ -48,7 +134,7 @@ class _GridViewDemoState extends State<GridViewDemo> {
       setState(() {
         isMoreClickState = true;
         showText = "收起";
-        currentList = widget.allChatList;
+        currentList = allChatList;
         currentList.add(
             ChatRoomMember(wechatId: "", nickname: "", avatar: "subtract"));
       });
@@ -56,7 +142,7 @@ class _GridViewDemoState extends State<GridViewDemo> {
       setState(() {
         isMoreClickState = false;
         showText = "查看更多群成员";
-        currentList = widget.allChatList; //.sublist(0, 8);
+        currentList = allChatList; //.sublist(0, 8);
         currentList
             .add(ChatRoomMember(wechatId: "add", nickname: "", avatar: "add"));
 

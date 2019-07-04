@@ -6,13 +6,11 @@ class ContainerDemoScreen extends StatefulWidget {
         context,
         MaterialPageRoute(
             builder: (BuildContext content) => ContainerDemoScreen(
-                  title: "Container使用",
                 )));
   }
 
-  ContainerDemoScreen({Key key, this.title}) : super(key: key);
+  ContainerDemoScreen({Key key,}) : super(key: key);
 
-  final String title;
 
   @override
   ContainerDemoScreenState createState() => ContainerDemoScreenState();
@@ -23,7 +21,7 @@ class ContainerDemoScreenState extends State<ContainerDemoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("container "),
       ),
       body: Container(
         child: Center(

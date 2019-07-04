@@ -7,11 +7,10 @@ class EmojiScreen extends StatefulWidget {
 
   static enter(BuildContext context) {
     return Navigator.push(context,
-        MaterialPageRoute(builder: (BuildContext content) => EmojiScreen(title: "仿微信发送表情组件",)));
+        MaterialPageRoute(builder: (BuildContext content) => EmojiScreen()));
   }
 
-  EmojiScreen({Key key, this.title}) : super(key: key);
-  final String title;
+  EmojiScreen({Key key}) : super(key: key);
 
   @override
   _EmojiScreenState createState() => new _EmojiScreenState();
@@ -36,7 +35,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text(widget.title),
+        title: new Text("微信表情组件"),
       ),
       body: EmoticonWidget(emoticonClick),
     );

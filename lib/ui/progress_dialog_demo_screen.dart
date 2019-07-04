@@ -8,12 +8,11 @@ class ProgressDialogDemoScreen extends StatefulWidget {
     return Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (BuildContext content) => ProgressDialogDemoScreen(title: "加载动画",)));
+            builder: (BuildContext content) => ProgressDialogDemoScreen()));
   }
 
-  ProgressDialogDemoScreen({Key key, this.title}) : super(key: key);
+  ProgressDialogDemoScreen({Key key,}) : super(key: key);
 
-  final String title;
 
   @override
   _ProgressDialogState createState() => _ProgressDialogState();
@@ -26,7 +25,7 @@ class _ProgressDialogState extends State<ProgressDialogDemoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("ProgressDialogDemoScreen"),
       ),
       body: ProgressDialog(
         loading: _loading,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
 import 'package:flutter_app_demo/ui/container_demo_screen.dart';
 import 'package:flutter_app_demo/ui/dialog_demo_screen.dart';
 import 'package:flutter_app_demo/ui/expansion_title_demo_screen.dart';
 import 'package:flutter_app_demo/ui/grid_view_demo_screen .dart';
-import 'package:flutter_app_demo/chat/mainSysytem.dart';
 import 'package:flutter_app_demo/ui/image_demo_screen.dart';
 import 'package:flutter_app_demo/ui/listview_demo_screen.dart';
 import 'package:flutter_app_demo/ui/progress_dialog_demo_screen.dart';
@@ -14,6 +14,8 @@ import 'package:flutter_app_demo/ui/text_edit_demo_screen.dart';
 import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
 import 'package:flutter_app_demo/ui/emoji_screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
+
+import 'model/screen_model.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,81 +36,35 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<String> demoList = List();
+  List<ScreenModel> demoList = List();
 
   @override
   void initState() {
     super.initState();
-    demoList.add("GridView使用");
-    demoList.add("加载动画");
-    demoList.add("Container 使用");
-    demoList.add("ViewPagerIndicator 使用");
-    demoList.add("Dialog 使用");
-    demoList.add("仿微信发送表情组件");
-    demoList.add("ExpansionTileDemo");
-    demoList.add("ListView 下拉刷新");
-    demoList.add("TabBar使用");
-    demoList.add("ViewPagerIndicator 使用");
-    demoList.add("ListView 使用");
-    demoList.add("TextField 使用");
-    demoList.add("Image 各种操作");
-    demoList.add("Stack 各种操作");
+    demoList.add(ScreenModel("GridView使用", GridViewDemoScreen()));
+    demoList.add(ScreenModel("加载动画", ProgressDialogDemoScreen()));
+    demoList.add(ScreenModel("Container 使用", ContainerDemoScreen()));
+    demoList.add(ScreenModel("ViewPagerIndicator  使用", ViewPagerIndicatorDemo()));
+    demoList.add(ScreenModel("Dialog  使用", DialogDemoScreen()));
+    demoList.add(ScreenModel("仿微信发送表情组件 ", EmojiScreen()));
+    demoList.add(ScreenModel("ExpansionTileDemo ", ExpansionTileDemoScreen()));
+    demoList.add(ScreenModel("ListView 下拉刷新 ", RefreshIndicatorDemoScreen()));
+    demoList.add(ScreenModel("TabBar使用  ", TabBarViewDemoScreen()));
+    demoList.add(ScreenModel("ListView 使用  ", ListViewDemoScreen()));
+    demoList.add(ScreenModel("TextField 使用  ", TextFieldDemoScreen()));
+    demoList.add(ScreenModel("Image 使用  ", ImageDemoScreen()));
+    demoList.add(ScreenModel("Stack 使用  ", StackDemoScreen()));
+    demoList.add(ScreenModel("Stream 使用  ", StreamDemoScreen()));
   }
 
-  onItemClick(int index) {
-    switch (index) {
-      case 0:
-        GridViewDemoScreen.enter(context);
-        break;
-      case 1:
-        RouteHelper.pushWidget(context, ProgressDialogDemoScreen());
-        break;
-      case 2:
-        RouteHelper.pushWidget(context, ContainerDemoScreen());
-        break;
-      case 3:
-        RouteHelper.pushWidget(context, ViewPagerIndicatorDemo());
-        break;
-      case 4:
-        RouteHelper.pushWidget(context, DialogDemoScreen());
-        break;
-      case 5:
-        RouteHelper.pushWidget(context, EmojiScreen());
-        break;
-      case 6:
-        RouteHelper.pushWidget(context, ExpansionTileDemoScreen());
-        break;
-      case 7:
-        RouteHelper.pushWidget(context, RefreshIndicatorDemoScreen());
-        break;
-      case 8:
-        RouteHelper.pushWidget(context, TabBarViewDemoScreen());
-        break;
-      case 9:
-        RouteHelper.pushWidget(context, ViewPagerIndicatorDemo());
-        break;
-      case 10:
-        RouteHelper.pushWidget(context, ListViewDemoScreen());
-        break;
-      case 11:
-        RouteHelper.pushWidget(context, TextFieldDemoScreen());
-        break;
-      case 12:
-        RouteHelper.pushWidget(context, ImageDemoScreen());
-        break;
-      case 13:
-        RouteHelper.pushWidget(context, StackDemoScreen());
-        break;
-
-      default:
-        print("index  " + index.toString());
-    }
+  onItemClick(ScreenModel screenModel) {
+    RouteHelper.pushWidget(context, screenModel.widget);
   }
 
-  Widget buildItem(int index) {
+  Widget buildItem(ScreenModel screenModel) {
     return GestureDetector(
       onTap: () {
-        onItemClick(index);
+        onItemClick(screenModel);
       },
       child: Container(
           width: double.infinity,
@@ -117,7 +73,7 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               Container(
                   margin: EdgeInsets.all(10),
-                  child: Text(demoList.elementAt(index))),
+                  child: Text(screenModel.name)),
               Divider(height: 1.0, color: Colors.black),
             ],
           )),
@@ -129,7 +85,7 @@ class _HomeState extends State<Home> {
       padding: new EdgeInsets.all(10),
       itemCount: demoList.length,
       itemBuilder: (BuildContext context, int index) {
-        return buildItem(index);
+        return buildItem(demoList.elementAt(index));
       },
     );
   }
@@ -144,7 +100,3 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
-//      home: VoiceView(),
-//      home: DialogDemo(),
-//home: ExpansionTileSample(),

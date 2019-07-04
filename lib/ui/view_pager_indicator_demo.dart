@@ -18,7 +18,7 @@ class ViewPagerIndicatorDemo extends StatefulWidget {
 
 class _ViewPagerIndicatorDemoState extends State<ViewPagerIndicatorDemo>
     with AutomaticKeepAliveClientMixin {
-  List<String> data = ['个人快捷语', '公共快捷语', '部门快捷语'];
+  List<String> data = ['A', 'B', 'C'];
   int initPosition = 0;
 
   List<ReplyModel1> replyModes = new List();

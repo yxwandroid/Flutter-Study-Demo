@@ -62,7 +62,6 @@ class DialogDemoScreenState extends State<DialogDemoScreen> {
     showDialog(
         context: context,
         builder: (_) => new AlertDialog(
-              title: Text("标题"),
               content: Container(
                   height: 100,
                   child: Column(
@@ -72,11 +71,7 @@ class DialogDemoScreenState extends State<DialogDemoScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Image.asset(
-                              "images/search.png",
-                              width: 20,
-                              height: 20,
-                            ),
+
                             new Text("价格可以优惠吗!"),
                           ],
                         ),
@@ -88,6 +83,12 @@ class DialogDemoScreenState extends State<DialogDemoScreen> {
                           children: <Widget>[
                             new FlatButton(
                               child: new Text("取消"),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                            new FlatButton(
+                              child: new Text("预览"),
                               onPressed: () {
                                 Navigator.of(context).pop();
                               },

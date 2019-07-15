@@ -1,4 +1,4 @@
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -49,7 +49,7 @@ class _LoadingDialog extends State<NetLoadingDialog> {
             height: 120.0,
             child: new Container(
               decoration: ShapeDecoration(
-                color: Color(0xffffffff),
+                color: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(
                     Radius.circular(8.0),
@@ -60,14 +60,19 @@ class _LoadingDialog extends State<NetLoadingDialog> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  new CircularProgressIndicator(),
+                  new CupertinoActivityIndicator(
+                    radius: 20,
+                  ),
                   new Padding(
                     padding: const EdgeInsets.only(
                       top: 20.0,
                     ),
                     child: new Text(
                       widget.loadingText,
-                      style: new TextStyle(fontSize: 12.0),
+                      style: new TextStyle(
+                        fontSize: 12.0,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ],

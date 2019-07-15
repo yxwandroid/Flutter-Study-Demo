@@ -37,6 +37,7 @@ class DialogDemoScreenState extends State<DialogDemoScreen> {
                 context: context,
                 builder: (context) {
                   return new NetLoadingDialog(
+                    loadingText: "加载中",
                     dismissDialog: _disMissCallBack,
                     outsideDismiss: false,
                   );

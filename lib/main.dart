@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
 import 'package:flutter_app_demo/ui/container_demo_screen.dart';
+import 'package:flutter_app_demo/ui/clip_board_screen.dart';
 import 'package:flutter_app_demo/ui/dialog_demo_screen.dart';
 import 'package:flutter_app_demo/ui/expansion_title_demo_screen.dart';
 import 'package:flutter_app_demo/ui/grid_view_demo_screen .dart';
 import 'package:flutter_app_demo/ui/image_demo_screen.dart';
 import 'package:flutter_app_demo/ui/listview_demo_screen.dart';
+import 'package:flutter_app_demo/ui/popup_page_screen.dart';
 import 'package:flutter_app_demo/ui/progress_dialog_demo_screen.dart';
 import 'package:flutter_app_demo/ui/refreshIndicator_demo_screen.dart';
 import 'package:flutter_app_demo/ui/stack_demo_screen.dart';
@@ -55,6 +57,8 @@ class _HomeState extends State<Home> {
     demoList.add(ScreenModel("Image 使用  ", ImageDemoScreen()));
     demoList.add(ScreenModel("Stack 使用  ", StackDemoScreen()));
     demoList.add(ScreenModel("Stream 使用  ", StreamDemoScreen()));
+    demoList.add(ScreenModel("Clipboard 使用  ", ClipBoardScreen()));
+    demoList.add(ScreenModel("PopupPage 使用  ", PopupPageScreen()));
   }
 
   onItemClick(ScreenModel screenModel) {

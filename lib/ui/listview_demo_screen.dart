@@ -82,6 +82,7 @@ class ListViewDemoScreenState extends State<ListViewDemoScreen>{
         title: new Text(title),
       ),
       body: new ListView.builder(
+        scrollDirection: Axis.horizontal,
         itemCount: items.length,
         itemBuilder: (context, index) {
           final item = items[index];

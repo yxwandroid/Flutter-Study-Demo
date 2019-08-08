@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
 import 'package:flutter_app_demo/ui/container_demo_screen.dart';
@@ -43,10 +44,13 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    demoList.add(ScreenModel("GridView使用", GridViewDemoScreen()));
+    demoList.add(ScreenModel("GridView使用", GridViewDemoScreen(),
+        url:
+            "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/gridview_demo.gif"));
     demoList.add(ScreenModel("加载动画", ProgressDialogDemoScreen()));
     demoList.add(ScreenModel("Container 使用", ContainerDemoScreen()));
-    demoList.add(ScreenModel("ViewPagerIndicator  使用", ViewPagerIndicatorDemo()));
+    demoList
+        .add(ScreenModel("ViewPagerIndicator  使用", ViewPagerIndicatorDemo()));
     demoList.add(ScreenModel("Dialog  使用", DialogDemoScreen()));
     demoList.add(ScreenModel("仿微信发送表情组件 ", EmojiScreen()));
     demoList.add(ScreenModel("ExpansionTileDemo ", ExpansionTileDemoScreen()));
@@ -70,26 +74,40 @@ class _HomeState extends State<Home> {
       onTap: () {
         onItemClick(screenModel);
       },
-      child: Container(
-          width: double.infinity,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Container(
-                  margin: EdgeInsets.all(10),
-                  child: Text(screenModel.name)),
-              Divider(height: 1.0, color: Colors.black),
-            ],
-          )),
+      child: Row(
+        children: <Widget>[
+          screenModel.url != null
+              ? Container(
+
+                  child: CachedNetworkImage(
+                    width: 100,
+//                    height: 100,
+                    fit: BoxFit.fitWidth,
+                    imageUrl: screenModel.url,
+                    placeholder: (context, url) =>
+                        new CircularProgressIndicator(),
+                    errorWidget: (context, url, error) => new Icon(Icons.error),
+                  ),
+                )
+              : Container(),
+          Container(margin: EdgeInsets.all(10), child: Text(screenModel.name)),
+        ],
+      ),
     );
   }
 
   ListView buildListView() {
-    return ListView.builder(
+    return ListView.separated(
       padding: new EdgeInsets.all(10),
       itemCount: demoList.length,
       itemBuilder: (BuildContext context, int index) {
         return buildItem(demoList.elementAt(index));
+      },
+      separatorBuilder: (context, index) {
+        return Container(
+          constraints: BoxConstraints.tightFor(height: 1),
+          color: Colors.black45,
+        );
       },
     );
   }

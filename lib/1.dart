@@ -4,13 +4,10 @@ import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
 import 'package:flutter_app_demo/ui/container_demo_screen.dart';
 import 'package:flutter_app_demo/ui/clip_board_screen.dart';
 import 'package:flutter_app_demo/ui/dialog_demo_screen.dart';
-import 'package:flutter_app_demo/ui/expandableListView_screen.dart';
 import 'package:flutter_app_demo/ui/expansion_title_demo_screen.dart';
 import 'package:flutter_app_demo/ui/grid_view_demo_screen .dart';
 import 'package:flutter_app_demo/ui/image_demo_screen.dart';
-import 'package:flutter_app_demo/ui/inheritedwidget_screen.dart';
 import 'package:flutter_app_demo/ui/listview_demo_screen.dart';
-import 'package:flutter_app_demo/ui/notification_screen.dart';
 import 'package:flutter_app_demo/ui/popup_page_screen.dart';
 import 'package:flutter_app_demo/ui/progress_dialog_demo_screen.dart';
 import 'package:flutter_app_demo/ui/refreshIndicator_demo_screen.dart';
@@ -47,13 +44,13 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-//    demoList.add(ScreenModel("GridView使用", GridViewDemoScreen(),
-//        url:
-//        "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/gridview_demo.gif"));
-    demoList.add(ScreenModel("GridView使用", GridViewDemoScreen()));
+    demoList.add(ScreenModel("GridView使用", GridViewDemoScreen(),
+        url:
+            "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/gridview_demo.gif"));
     demoList.add(ScreenModel("加载动画", ProgressDialogDemoScreen()));
     demoList.add(ScreenModel("Container 使用", ContainerDemoScreen()));
-    demoList.add(ScreenModel("ViewPagerIndicator  使用", ViewPagerIndicatorDemo()));
+    demoList
+        .add(ScreenModel("ViewPagerIndicator  使用", ViewPagerIndicatorDemo()));
     demoList.add(ScreenModel("Dialog  使用", DialogDemoScreen()));
     demoList.add(ScreenModel("仿微信发送表情组件 ", EmojiScreen()));
     demoList.add(ScreenModel("ExpansionTileDemo ", ExpansionTileDemoScreen()));
@@ -66,9 +63,6 @@ class _HomeState extends State<Home> {
     demoList.add(ScreenModel("Stream 使用  ", StreamDemoScreen()));
     demoList.add(ScreenModel("Clipboard 使用  ", ClipBoardScreen()));
     demoList.add(ScreenModel("PopupPage 使用  ", PopupPageScreen()));
-    demoList.add(ScreenModel("notification 使用  ", NotificationScreen()));
-    demoList.add(ScreenModel("inheritedWidget 使用  ", InheritedWidgetScreen()));
-    demoList.add(ScreenModel("expandableListView 使用  ", ExpandableListViewScreen()));
   }
 
   onItemClick(ScreenModel screenModel) {
@@ -85,16 +79,16 @@ class _HomeState extends State<Home> {
           screenModel.url != null
               ? Container(
 
-            child: CachedNetworkImage(
-              width: 100,
+                  child: CachedNetworkImage(
+                    width: 100,
 //                    height: 100,
-              fit: BoxFit.fitWidth,
-              imageUrl: screenModel.url,
-              placeholder: (context, url) =>
-              new CircularProgressIndicator(),
-              errorWidget: (context, url, error) => new Icon(Icons.error),
-            ),
-          )
+                    fit: BoxFit.fitWidth,
+                    imageUrl: screenModel.url,
+                    placeholder: (context, url) =>
+                        new CircularProgressIndicator(),
+                    errorWidget: (context, url, error) => new Icon(Icons.error),
+                  ),
+                )
               : Container(),
           Container(margin: EdgeInsets.all(10), child: Text(screenModel.name)),
         ],

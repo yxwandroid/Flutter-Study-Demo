@@ -7,7 +7,7 @@ packages:
       name: async
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.2.0"
+    version: "2.3.0"
   audioplayer:
     dependency: "direct main"
     description:
@@ -21,7 +21,7 @@ packages:
       name: boolean_selector
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.0.4"
+    version: "1.0.5"
   cached_network_image:
     dependency: "direct main"
     description:
@@ -70,7 +70,7 @@ packages:
       name: crypto
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.6"
+    version: "2.1.3"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -84,14 +84,14 @@ packages:
       name: decimal
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.3.3"
+    version: "0.3.5"
   dio:
     dependency: "direct main"
     description:
       name: dio
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.1.13"
+    version: "2.2.2"
   event_bus:
     dependency: "direct main"
     description:
@@ -147,7 +147,7 @@ packages:
       name: fluttertoast
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "3.1.0"
+    version: "3.1.3"
   http:
     dependency: transitive
     description:
@@ -168,7 +168,7 @@ packages:
       name: image_picker
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.6.0+17"
+    version: "0.6.1+4"
   matcher:
     dependency: transitive
     description:
@@ -182,21 +182,21 @@ packages:
       name: meta
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.1.6"
+    version: "1.1.7"
   page_indicator:
     dependency: "direct main"
     description:
       name: page_indicator
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.2.0"
+    version: "0.2.1"
   path:
     dependency: transitive
     description:
       name: path
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.6.2"
+    version: "1.6.4"
   path_provider:
     dependency: transitive
     description:
@@ -210,7 +210,7 @@ packages:
       name: pedantic
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.7.0"
+    version: "1.8.0+1"
   qr:
     dependency: transitive
     description:
@@ -231,14 +231,14 @@ packages:
       name: quiver
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.3"
+    version: "2.0.5"
   rational:
     dependency: transitive
     description:
       name: rational
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.3.4"
+    version: "0.3.6"
   rxdart:
     dependency: "direct main"
     description:
@@ -271,7 +271,7 @@ packages:
       name: sqflite
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.1.6+2"
+    version: "1.1.6+5"
   stack_trace:
     dependency: transitive
     description:
@@ -292,7 +292,7 @@ packages:
       name: string_scanner
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.0.4"
+    version: "1.0.5"
   synchronized:
     dependency: transitive
     description:
@@ -327,7 +327,7 @@ packages:
       name: url_launcher
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "5.1.0"
+    version: "5.1.3"
   uuid:
     dependency: transitive
     description:
@@ -348,7 +348,7 @@ packages:
       name: webview_flutter
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.3.10+3"
+    version: "0.3.14+1"
 sdks:
   dart: ">=2.2.2 <3.0.0"
   flutter: ">=1.5.0 <2.0.0"

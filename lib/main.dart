@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Home(),
+//      home: ExpandableListViewScreen(),
     );
   }
 }
@@ -69,6 +70,7 @@ class _HomeState extends State<Home> {
     demoList.add(ScreenModel("notification 使用  ", NotificationScreen()));
     demoList.add(ScreenModel("inheritedWidget 使用  ", InheritedWidgetScreen()));
     demoList.add(ScreenModel("expandableListView 使用  ", ExpandableListViewScreen()));
+
   }
 
   onItemClick(ScreenModel screenModel) {

@@ -1,25 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new FadeAppTest());
-}
 
-class FadeAppTest extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Fade Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: new MyFadeTest(title: 'Fade Demo'),
-    );
-  }
-}
 
 class MyFadeTest extends StatefulWidget {
-  MyFadeTest({Key key, this.title}) : super(key: key);
-  final String title;
+  MyFadeTest({Key key}) : super(key: key);
 
   @override
   State createState() => new _MyFadeTest();

@@ -1,60 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:event_bus/event_bus.dart';
-import 'package:flutter_app_demo/eventbus/animation_event.dart';
-import 'package:flutter_app_demo/eventbus/native_event.dart';
-import 'package:flutter_app_demo/utils/voice_animation_image.dart';
+import 'package:flutter_app_demo/animation/voice_animation_image.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
+///类似微信语音播放动画
+class WeChatVoiceScreen extends StatefulWidget {
+  WeChatVoiceScreen({Key key}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _WeChatVoiceScreenState createState() => _WeChatVoiceScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _WeChatVoiceScreenState extends State<WeChatVoiceScreen> {
   List<String> _assetList = new List();
-  Widget voice;
   bool isStop = true;
 
-  VoiceAnimationImage ss;
   @override
   void initState() {
     super.initState();
+
     _assetList.add("images/left_voice_1.png");
     _assetList.add("images/left_voice_2.png");
     _assetList.add("images/left_voice_3.png");
-
-    ss = VoiceAnimationImage(
-      _assetList,
-      width: 100,
-      height: 100,
-      isStop: isStop,
-    );
   }
 
   @override
   Widget build(BuildContext context) {
-    print('父控件 0build');
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("微信语音播放动画"),
       ),
       body: Column(
         children: <Widget>[

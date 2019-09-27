@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/animation/mainAnimation.dart';
 import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
 import 'package:flutter_app_demo/ui/container_demo_screen.dart';
 import 'package:flutter_app_demo/ui/clip_board_screen.dart';
@@ -21,6 +22,8 @@ import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
 import 'package:flutter_app_demo/ui/emoji_screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
 
+import 'animation/voice_view_screen.dart';
+import 'animation/wechat_voice_screen.dart';
 import 'model/screen_model.dart';
 
 void main() => runApp(MyApp());
@@ -29,7 +32,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+//      home: Home(),
+      home: MyFadeTest(),
 //      home: ExpandableListViewScreen(),
     );
   }
@@ -70,6 +74,8 @@ class _HomeState extends State<Home> {
     demoList.add(ScreenModel("notification 使用  ", NotificationScreen()));
     demoList.add(ScreenModel("inheritedWidget 使用  ", InheritedWidgetScreen()));
     demoList.add(ScreenModel("expandableListView 使用  ", ExpandableListViewScreen()));
+    demoList.add(ScreenModel("flutter实现微信播放语音动画 ", WeChatVoiceScreen()));
+    demoList.add(ScreenModel("flutter实现微信发送语音动画 ", VoiceViewScreen()));
 
   }
 

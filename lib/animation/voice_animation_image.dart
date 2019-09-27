@@ -6,14 +6,14 @@ class VoiceAnimationImage extends StatefulWidget {
   final double width;
   final double height;
   int interval = 200;
-
-
   bool isStop= false;
-
-  VoiceAnimationImageState voiceAnimationImageState;
-  VoiceAnimationImage(this._assetList,
-      {this.width, this.height, this.interval,this.isStop});
   var callStart;
+  VoiceAnimationImageState voiceAnimationImageState;
+
+
+  VoiceAnimationImage(this._assetList,
+      {this.width, this.height, this.isStop,this.interval});
+
   @override
   State<StatefulWidget> createState() {
      voiceAnimationImageState = VoiceAnimationImageState();
@@ -64,18 +64,6 @@ class VoiceAnimationImageState extends State<VoiceAnimationImage>
         setState(() {
         });
       });
-
-//    widget.callStart((value){
-//      if(value){
-//        start();
-//      }else{
-//        stop();
-//      }
-//
-//    });
-
-//   _controller.forward();
-
   }
 
   @override

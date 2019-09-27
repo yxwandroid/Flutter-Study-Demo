@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class VoiceView extends StatefulWidget {
-  VoiceView({Key key, this.title}) : super(key: key);
 
-  final String title;
+/// 仿微信录制语音动画
+class VoiceViewScreen extends StatefulWidget {
+  VoiceViewScreen({Key key}) : super(key: key);
+
 
   @override
-  _VoiceViewState createState() => _VoiceViewState();
+  _VoiceViewScreenState createState() => _VoiceViewScreenState();
 }
 
-class _VoiceViewState extends State<VoiceView> {
+class _VoiceViewScreenState extends State<VoiceViewScreen> {
   double start = 0.0;
   double offset = 0.0;
   bool isUp = false;
@@ -61,7 +62,7 @@ class _VoiceViewState extends State<VoiceView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("wwww"),
+        title: Text("仿微信录制语音动画"),
       ),
       body: Container(
         width: double.infinity,

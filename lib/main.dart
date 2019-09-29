@@ -20,6 +20,7 @@ import 'package:flutter_app_demo/ui/tab_bar_view_demo_screen.dart';
 import 'package:flutter_app_demo/ui/text_edit_demo_screen.dart';
 import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
 import 'package:flutter_app_demo/ui/emoji_screen.dart';
+import 'package:flutter_app_demo/ui/webview_demo_screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
 
 import 'animation/voice_view_screen.dart';
@@ -32,8 +33,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-//      home: Home(),
-      home: MyFadeTest(),
+      home: Home(),
+//      home: MyFadeTest(),
 //      home: ExpandableListViewScreen(),
     );
   }
@@ -56,6 +57,7 @@ class _HomeState extends State<Home> {
 //        url:
 //        "https://raw.githubusercontent.com/yxwandroid/Flutter-Study-Demo/master/gridview_demo.gif"));
     demoList.add(ScreenModel("GridView使用", GridViewDemoScreen()));
+    demoList.add(ScreenModel("webView加载", WebViewDemoScreen()));
     demoList.add(ScreenModel("加载动画", ProgressDialogDemoScreen()));
     demoList.add(ScreenModel("Container 使用", ContainerDemoScreen()));
     demoList.add(ScreenModel("ViewPagerIndicator  使用", ViewPagerIndicatorDemo()));

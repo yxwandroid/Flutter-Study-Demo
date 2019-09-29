@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-class WebViewContainer extends StatefulWidget {
-  final url;
-  WebViewContainer(this.url);
+class WebViewDemoScreen extends StatefulWidget {
+  WebViewDemoScreen();
   @override
-  createState() => _WebViewContainerState(this.url);
+  createState() => _WebViewDemoScreenState();
 }
-class _WebViewContainerState extends State<WebViewContainer> {
+class _WebViewDemoScreenState extends State<WebViewDemoScreen> {
   var _url;
   final _key = UniqueKey();
-  _WebViewContainerState(this._url);
+  _WebViewDemoScreenState();
+
+  @override
+  void initState() {
+    super.initState();
+
+    _url = "https://baidu.com";
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

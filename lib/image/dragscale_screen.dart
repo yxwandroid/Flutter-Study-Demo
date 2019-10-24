@@ -23,6 +23,6 @@ class DragScaleDemoScreenState extends State<DragScaleDemoScreen> {
           ),
         ),
       ),
-    );;
+    );
   }
 }

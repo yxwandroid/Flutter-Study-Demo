@@ -136,6 +136,13 @@ packages:
       url: "https://github.com/LiuC520/flutter_drag_scale.git"
     source: git
     version: "0.0.1"
+  flutter_redux:
+    dependency: "direct main"
+    description:
+      name: flutter_redux
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.5.3"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -239,6 +246,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.3.6"
+  redux:
+    dependency: transitive
+    description:
+      name: redux
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "3.0.0"
   rxdart:
     dependency: "direct main"
     description:

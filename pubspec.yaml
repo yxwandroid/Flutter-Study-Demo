@@ -38,6 +38,7 @@ dependencies:
   audioplayer: ^0.5.2
   webview_flutter: ^0.3.9+1
   url_launcher: ^5.0.3
+  flutter_redux: 0.5.3
   flutter_drag_scale:
     git: https://github.com/LiuC520/flutter_drag_scale.git
   flutter_custom_bottom_tab_bar:

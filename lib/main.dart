@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_demo/animation/mainAnimation.dart';
 import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
+import 'package:flutter_app_demo/ui/SplashPage.dart';
 import 'package:flutter_app_demo/ui/container_demo_screen.dart';
 import 'package:flutter_app_demo/ui/clip_board_screen.dart';
 import 'package:flutter_app_demo/ui/dialog_demo_screen.dart';
@@ -23,22 +23,40 @@ import 'package:flutter_app_demo/ui/emoji_screen.dart';
 import 'package:flutter_app_demo/ui/webview_demo_screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
 
+import 'NavigatorUtils.dart';
 import 'animation/voice_view_screen.dart';
 import 'animation/wechat_voice_screen.dart';
 import 'model/screen_model.dart';
 
-void main() => runApp(MyApp());
+
+
+void main(){
+
+  runApp(MyApp());
+}
+/*配置routes*/
 
 class MyApp extends StatelessWidget {
+
+  static Map<String, WidgetBuilder> configRoutes = {
+    SplashPage.sName: (context) => SplashPage(),
+  };
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: true,
+      navigatorObservers: [
+        NavigatorUtils.getInstance(),
+      ],
+//      routes: configRoutes,
       home: Home(),
+
 //      home: MyFadeTest(),
 //      home: ExpandableListViewScreen(),
     );
   }
 }
+
 
 class Home extends StatefulWidget {
   @override

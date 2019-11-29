@@ -5,7 +5,7 @@ import 'package:flutter_app_demo/r.dart';
 import '../color.dart';
 
 class GridViewDemoScreen extends StatefulWidget {
-
+  static final String sName = "GridViewDemoScreen";
   static enter(BuildContext context) {
     return Navigator.push(
         context,

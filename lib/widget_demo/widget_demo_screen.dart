@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/model/screen_model.dart';
 import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
-import 'package:flutter_app_demo/ui/SplashPage.dart';
 import 'package:flutter_app_demo/ui/container_demo_screen.dart';
 import 'package:flutter_app_demo/ui/clip_board_screen.dart';
 import 'package:flutter_app_demo/ui/dialog_demo_screen.dart';
@@ -22,65 +22,50 @@ import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
 import 'package:flutter_app_demo/ui/emoji_screen.dart';
 import 'package:flutter_app_demo/ui/webview_demo_screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
-import 'package:flutter_app_demo/widget_demo/widget_demo_screen.dart';
 
-import 'NavigatorUtils.dart';
-import 'animation/voice_view_screen.dart';
-import 'animation/wechat_voice_screen.dart';
-import 'model/screen_model.dart';
-
-void main() {
-  runApp(MyApp());
-}
-/*配置routes*/
-
-class MyApp extends StatelessWidget {
-  static Map<String, WidgetBuilder> configRoutes = {
-    SplashPage.sName: (context) => SplashPage(),
-    WidgetDemoScreen.sName: (context) => WidgetDemoScreen(),
-    Home.sName: (context) => Home(),
-    GridViewDemoScreen.sName: (context) => GridViewDemoScreen(),
-  };
+class WidgetDemoScreen extends StatefulWidget {
+  static final String sName = "WidgetDemoPage";
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-//      debugShowCheckedModeBanner: true,
-////路由方式1   注意跳转路由的时候使用的方式使用routeName的方式
-//      navigatorObservers: [
-//        NavigatorUtils.getInstance(),
-//      ],
-//      routes: configRoutes,
-//      initialRoute: "Home",
-
-      //路由方式2
-      home: Home(),
-    );
+  _WidgetDemoScreenState createState() {
+    return _WidgetDemoScreenState();
   }
 }
 
-class Home extends StatefulWidget {
-  static final String sName = "Home";
-
-  @override
-  _HomeState createState() {
-    return _HomeState();
-  }
-}
-
-class _HomeState extends State<Home> {
+class _WidgetDemoScreenState extends State<WidgetDemoScreen> {
   List<ScreenModel> demoList = List();
+
+  BuildContext mContent;
 
   @override
   void initState() {
     super.initState();
-    demoList.add(ScreenModel("基础组件使用 ", WidgetDemoScreen()));
-    demoList.add(ScreenModel("flutter实现微信播放语音动画 ", WeChatVoiceScreen()));
-    demoList.add(ScreenModel("flutter实现微信发送语音动画 ", VoiceViewScreen()));
+    demoList.add(ScreenModel("GridView使用", GridViewDemoScreen()));
+    demoList.add(ScreenModel("webView加载", WebViewDemoScreen()));
+    demoList.add(ScreenModel("加载动画", ProgressDialogDemoScreen()));
+    demoList.add(ScreenModel("Container 使用", ContainerDemoScreen()));
+    demoList
+        .add(ScreenModel("ViewPagerIndicator  使用", ViewPagerIndicatorDemo()));
+    demoList.add(ScreenModel("Dialog  使用", DialogDemoScreen()));
+    demoList.add(ScreenModel("仿微信发送表情组件 ", EmojiScreen()));
+    demoList.add(ScreenModel("ExpansionTileDemo ", ExpansionTileDemoScreen()));
+    demoList.add(ScreenModel("ListView 下拉刷新 ", RefreshIndicatorDemoScreen()));
+    demoList.add(ScreenModel("TabBar使用  ", TabBarViewDemoScreen()));
+    demoList.add(ScreenModel("ListView 使用  ", ListViewDemoScreen()));
+    demoList.add(ScreenModel("TextField 使用  ", TextFieldDemoScreen()));
+    demoList.add(ScreenModel("Image 使用  ", ImageDemoScreen()));
+    demoList.add(ScreenModel("Stack 使用  ", StackDemoScreen()));
+    demoList.add(ScreenModel("Stream 使用  ", StreamDemoScreen()));
+    demoList.add(ScreenModel("Clipboard 使用  ", ClipBoardScreen()));
+    demoList.add(ScreenModel("PopupPage 使用  ", PopupPageScreen()));
+    demoList.add(ScreenModel("notification 使用  ", NotificationScreen()));
+    demoList.add(ScreenModel("inheritedWidget 使用  ", InheritedWidgetScreen()));
+    demoList.add(
+        ScreenModel("expandableListView 使用  ", ExpandableListViewScreen()));
   }
 
   onItemClick(ScreenModel screenModel) {
-    RouteHelper.pushWidget(context, screenModel.widget);
+    RouteHelper.pushWidget(mContent, screenModel.widget);
   }
 
   Widget buildItem(ScreenModel screenModel) {
@@ -127,6 +112,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    mContent = context;
     return Scaffold(
       appBar: AppBar(
         title: Text("Flutter 学习"),

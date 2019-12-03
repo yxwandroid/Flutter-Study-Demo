@@ -4,19 +4,19 @@
 
 ## 已经实现的功能
 
-        
-###### Flutter使用GridView实现类型微信群详情界面
+    
+    
+    
+Flutter使用GridView实现类型微信群详情界面
 
-<!--![](.README_images/ios.gif)-->
 <img src="README_images/gridview_demo.gif" width="200"  align=center />
 
-
-###### Flutter 仿微信语音发送动画  
+Flutter 仿微信语音发送动画
 
 <img src="README_images/voice_send.gif" width="200"  align=center />
 
+Flutter 仿微信语音播放动画
 
-###### Flutter 仿微信语音播放动画
 <img src="README_images/voice_play.gif" width="200"  align=center />
 
 

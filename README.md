@@ -7,6 +7,8 @@
     
     
     
+    
+    
 Flutter使用GridView实现类型微信群详情界面
 
 <img src="README_images/gridview_demo.gif" width="200"  align=center />

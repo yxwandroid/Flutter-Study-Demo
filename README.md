@@ -8,15 +8,15 @@
 ###### Flutter使用GridView实现类型微信群详情界面
 
 
-![](.README_images/gridview_demo.gif)
+![](README_images/gridview_demo.gif)
 
 ###### Flutter 仿微信语音发送动画  
 
-![](.README_images/voice_send.gif)
+![](README_images/voice_send.gif)
 
 ###### Flutter 仿微信语音播放动画
 
-![](.README_images/voice_play.gif)
+![](README_images/voice_play.gif)
 
 
 

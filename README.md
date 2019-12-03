@@ -5,7 +5,8 @@
 ## 已经实现的功能
 
 
-| 仿微信语音发送动画 | GridView实现类型微信群详情界面 | 仿微信语音播放动画 |
+
+| <font size=10 > 仿微信语音发送动画</font> | GridView实现类型微信群详情界面 | 仿微信语音播放动画 |
 | --- | --- | --- |
 | <img src="README_images/voice_send.gif" width="100"  align=center /> | <img src="README_images/gridview_demo.gif" width="100"  align=center />   | <img src="README_images/voice_play.gif" width="100"  align=center /> 
  

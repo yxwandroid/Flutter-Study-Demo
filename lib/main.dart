@@ -1,30 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
+import 'package:flutter_app_demo/business_ui/async_screen.dart';
+import 'package:flutter_app_demo/business_ui/value_notifier_screen.dart';
 import 'package:flutter_app_demo/ui/SplashPage.dart';
-import 'package:flutter_app_demo/ui/container_demo_screen.dart';
-import 'package:flutter_app_demo/ui/clip_board_screen.dart';
-import 'package:flutter_app_demo/ui/dialog_demo_screen.dart';
-import 'package:flutter_app_demo/ui/expandableListView_screen.dart';
-import 'package:flutter_app_demo/ui/expansion_title_demo_screen.dart';
 import 'package:flutter_app_demo/ui/grid_view_demo_screen .dart';
-import 'package:flutter_app_demo/ui/image_demo_screen.dart';
-import 'package:flutter_app_demo/ui/inheritedwidget_screen.dart';
-import 'package:flutter_app_demo/ui/listview_demo_screen.dart';
-import 'package:flutter_app_demo/ui/notification_screen.dart';
-import 'package:flutter_app_demo/ui/popup_page_screen.dart';
-import 'package:flutter_app_demo/ui/progress_dialog_demo_screen.dart';
-import 'package:flutter_app_demo/ui/refreshIndicator_demo_screen.dart';
-import 'package:flutter_app_demo/ui/stack_demo_screen.dart';
-import 'package:flutter_app_demo/ui/tab_bar_view_demo_screen.dart';
-import 'package:flutter_app_demo/ui/text_edit_demo_screen.dart';
-import 'package:flutter_app_demo/ui/view_pager_indicator_demo.dart';
-import 'package:flutter_app_demo/ui/emoji_screen.dart';
-import 'package:flutter_app_demo/ui/webview_demo_screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
 import 'package:flutter_app_demo/widget_demo/widget_demo_screen.dart';
 
-import 'NavigatorUtils.dart';
 import 'animation/voice_view_screen.dart';
 import 'animation/wechat_voice_screen.dart';
 import 'model/screen_model.dart';
@@ -55,6 +37,8 @@ class MyApp extends StatelessWidget {
 
       //路由方式2
       home: Home(),
+//      home: ValueNotifierScreen(),
+//      home: AsyncScreen(),
     );
   }
 }
@@ -77,6 +61,8 @@ class _HomeState extends State<Home> {
     demoList.add(ScreenModel("基础组件使用 ", WidgetDemoScreen()));
     demoList.add(ScreenModel("flutter实现微信播放语音动画 ", WeChatVoiceScreen()));
     demoList.add(ScreenModel("flutter实现微信发送语音动画 ", VoiceViewScreen()));
+    demoList.add(ScreenModel("ValueNotifier使用 ", ValueNotifierScreen()));
+    demoList.add(ScreenModel("Flutter中的异步 ", AsyncScreen()));
   }
 
   onItemClick(ScreenModel screenModel) {

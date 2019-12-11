@@ -31,6 +31,105 @@ class _ExpansionTileDemoScreenState extends State<ExpansionTileDemoScreen> {
         "22",
         "22",
       ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ),  new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
+    ), new ReplyModel(
+      'Chapter B',
+      <String>[
+        "22",
+        "22",
+      ],
+
     ),
   ];
 
@@ -70,6 +169,10 @@ class ReplyItem extends StatelessWidget {
     } else {
       return new ExpansionTile(
         key: new PageStorageKey<ReplyModel>(root),
+//        leading: Text("left"),
+//        trailing: Text("right"),
+        initiallyExpanded: true,
+//        backgroundColor: Colors.yellow,
         title: new Text(root.title),
         children: buildItem(root),
       );

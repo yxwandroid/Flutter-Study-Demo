@@ -2,9 +2,11 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/business_ui/async_screen.dart';
 import 'package:flutter_app_demo/business_ui/value_notifier_screen.dart';
-import 'package:flutter_app_demo/ui/SplashPage.dart';
-import 'package:flutter_app_demo/ui/grid_view_demo_screen .dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
+import 'package:flutter_app_demo/widget_demo/ui/expansion_panel_list_screen.dart';
+import 'package:flutter_app_demo/widget_demo/ui/SplashPage.dart';
+import 'package:flutter_app_demo/widget_demo/ui/grid_view_demo_screen%20.dart';
+import 'package:flutter_app_demo/widget_demo/ui/mergeable_material_item_screen.dart';
 import 'package:flutter_app_demo/widget_demo/widget_demo_screen.dart';
 
 import 'animation/voice_view_screen.dart';
@@ -37,6 +39,7 @@ class MyApp extends StatelessWidget {
 
       //路由方式2
       home: Home(),
+//      home: MergeableMaterialItemScreen(),
 //      home: ValueNotifierScreen(),
 //      home: AsyncScreen(),
     );

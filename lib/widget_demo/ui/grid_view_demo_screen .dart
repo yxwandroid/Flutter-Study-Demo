@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/color.dart';
 import 'package:flutter_app_demo/model/chat_room_member.dart';
 import 'package:flutter_app_demo/r.dart';
-import '../color.dart';
 
 class GridViewDemoScreen extends StatefulWidget {
   static final String sName = "GridViewDemoScreen";

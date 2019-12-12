@@ -162,11 +162,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_web_plugins:
-    dependency: transitive
-    description: flutter
-    source: sdk
-    version: "0.0.0"
   fluttertoast:
     dependency: "direct main"
     description:
@@ -236,7 +231,7 @@ packages:
       name: path_provider
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.5.0+1"
+    version: "1.5.1"
   pedantic:
     dependency: transitive
     description:
@@ -251,13 +246,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.4.0"
-  plugin_platform_interface:
+  platform:
     dependency: transitive
     description:
-      name: plugin_platform_interface
+      name: platform
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.0.0"
+    version: "2.2.1"
   qr:
     dependency: transitive
     description:
@@ -375,34 +370,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.1.6"
-  url_launcher:
-    dependency: "direct main"
-    description:
-      name: url_launcher
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "5.4.1"
-  url_launcher_macos:
-    dependency: transitive
-    description:
-      name: url_launcher_macos
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.0.1"
-  url_launcher_platform_interface:
-    dependency: transitive
-    description:
-      name: url_launcher_platform_interface
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "1.0.4"
-  url_launcher_web:
-    dependency: transitive
-    description:
-      name: url_launcher_web
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.1.0+1"
   uuid:
     dependency: transitive
     description:
@@ -433,4 +400,4 @@ packages:
     version: "3.5.0"
 sdks:
   dart: ">=2.5.0 <3.0.0"
-  flutter: ">=1.12.8 <2.0.0"
+  flutter: ">=1.10.15-pre.148 <2.0.0"

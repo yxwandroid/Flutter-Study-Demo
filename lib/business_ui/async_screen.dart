@@ -36,13 +36,13 @@ class _AsyncScreenState extends State<AsyncScreen> {
 //    print(startChat());
 //    print(playPhone());
 
-    print(enterRestaurant());
-    Future<String> waitDinnerFuture = new Future(waitForDinner);
-    waitDinnerFuture.then((str) {
-      print(str);
-    });
-    print(startChat());
-    print(playPhone());
+//    print(enterRestaurant());
+//    Future<String> waitDinnerFuture = new Future(waitForDinner);
+//    waitDinnerFuture.then((str) {
+//      print(str);
+//    });
+//    print(startChat());
+//    print(playPhone());
 
     return Scaffold(
       appBar: AppBar(

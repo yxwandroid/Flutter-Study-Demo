@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+//      theme: ThemeData.dark(),
 //      debugShowCheckedModeBanner: true,
 ////路由方式1   注意跳转路由的时候使用的方式使用routeName的方式
 //      navigatorObservers: [

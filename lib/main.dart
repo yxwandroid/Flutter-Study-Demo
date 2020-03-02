@@ -11,6 +11,7 @@ import 'package:flutter_app_demo/widget_demo/widget_demo_screen.dart';
 
 import 'animation/voice_view_screen.dart';
 import 'animation/wechat_voice_screen.dart';
+import 'bloc/blocdemo/ui/LoginScreen.dart';
 import 'model/screen_model.dart';
 
 void main() {
@@ -67,6 +68,7 @@ class _HomeState extends State<Home> {
     demoList.add(ScreenModel("flutter实现微信发送语音动画 ", VoiceViewScreen()));
     demoList.add(ScreenModel("ValueNotifier使用 ", ValueNotifierScreen()));
     demoList.add(ScreenModel("Flutter中的异步 ", AsyncScreen()));
+    demoList.add(ScreenModel("Bloc使用 ", LoginScreen()));
   }
 
   onItemClick(ScreenModel screenModel) {

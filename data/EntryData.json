@@ -1,0 +1,278 @@
+[
+  {
+    "id": 211,
+    "groupName": "公众号",
+    "sortIndex": 58807113,
+    "parentId": 0,
+    "replyType": 0,
+    "children": [],
+    "replys": []
+  },
+  {
+    "id": 41,
+    "groupName": "视频好",
+    "sortIndex": 41,
+    "parentId": 0,
+    "replyType": 0,
+    "children": [],
+    "replys": [
+      {
+        "id": 258,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 2,
+        "title": "你好",
+        "msgType": 1,
+        "content": "你好，我叫",
+        "createTime": "2018-06-14T14:59:21",
+        "lastUpdateTime": "2019-03-21T18:49:27.19445",
+        "sortIndex": 14223564
+      },
+      {
+        "id": 257,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 2,
+        "title": "中午问候",
+        "msgType": 1,
+        "content": "中饭吃了吗?",
+        "createTime": "2018-06-14T14:59:21",
+        "lastUpdateTime": "2018-06-14T14:59:21",
+        "sortIndex": 14223563
+      },
+      {
+        "id": 256,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 2,
+        "title": "早上问候",
+        "msgType": 1,
+        "content": "早上好呀!",
+        "createTime": "2018-06-14T14:59:21",
+        "lastUpdateTime": "2018-06-14T14:59:21",
+        "sortIndex": 14223562
+      },
+      {
+        "id": 255,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 2,
+        "title": "中午问候",
+        "msgType": 1,
+        "content": "中饭吃了吗?",
+        "createTime": "2018-06-14T14:57:54",
+        "lastUpdateTime": "2018-06-14T14:57:54",
+        "sortIndex": 14223476
+      },
+      {
+        "id": 254,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 2,
+        "title": "早上问候",
+        "msgType": 1,
+        "content": "早上好呀!",
+        "createTime": "2018-06-14T14:57:54",
+        "lastUpdateTime": "2018-06-14T14:57:54",
+        "sortIndex": 14223475
+      },
+      {
+        "id": 154,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 7,
+        "title": "发的说法",
+        "msgType": 1,
+        "content": "阿斯顿发",
+        "createTime": "2018-05-29T22:21:56.752633",
+        "lastUpdateTime": "2018-05-29T22:21:56.752633",
+        "sortIndex": 12867716
+      },
+      {
+        "id": 60,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 156,
+        "title": "500英里",
+        "msgType": 43,
+        "content": "https://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/reply/video/1526021583355Justin Timberlake - Five Hundred Miles.mp4",
+        "createTime": "2018-05-11T14:54:06.921533",
+        "lastUpdateTime": "2018-05-29T22:21:45.408906",
+        "sortIndex": 12306530
+      },
+      {
+        "id": 124,
+        "tenantId": 2,
+        "groupId": 41,
+        "accountId": 2,
+        "title": "呃呃",
+        "msgType": 1,
+        "content": "鹅鹅鹅鹅鹅鹅",
+        "createTime": "2018-05-23T10:28:50.843538",
+        "lastUpdateTime": "2018-05-23T10:28:50.843538",
+        "sortIndex": 60
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "groupName": "11",
+    "sortIndex": 19,
+    "parentId": 0,
+    "replyType": 0,
+    "children": [
+      {
+        "id": 17,
+        "groupName": "333",
+        "sortIndex": 1,
+        "parentId": 27,
+        "replyType": 0,
+        "children": [
+          {
+            "id": 37,
+            "groupName": "内容是图片",
+            "sortIndex": 2,
+            "parentId": 17,
+            "replyType": 0,
+            "children": [],
+            "replys": [
+              {
+                "id": 64,
+                "tenantId": 2,
+                "groupId": 37,
+                "accountId": 187,
+                "title": "D姑娘",
+                "msgType": 3,
+                "content": "https://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/reply/image/15261074589796f49425agy1fq8zecytdpj242o2aiu11.jpg",
+                "createTime": "2018-05-12T14:44:24.343369",
+                "lastUpdateTime": "2018-05-12T14:44:24.343369",
+                "sortIndex": 64
+              },
+              {
+                "id": 62,
+                "tenantId": 2,
+                "groupId": 37,
+                "accountId": 156,
+                "title": "打招呼33",
+                "msgType": 3,
+                "content": "https://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/reply/image/15260221140381.jpg",
+                "createTime": "2018-05-11T15:01:58.374656",
+                "lastUpdateTime": "2018-05-11T15:01:58.374656",
+                "sortIndex": 62
+              },
+              {
+                "id": 52,
+                "tenantId": 2,
+                "groupId": 37,
+                "accountId": 156,
+                "title": "打招呼22",
+                "msgType": 3,
+                "content": "https://kefures.oss-cn-shenzhen.aliyuncs.com/workphone/tenant2/account156/png/20180510154051.png",
+                "createTime": "2018-05-10T15:40:53.062191",
+                "lastUpdateTime": "2018-05-11T15:01:36.49965",
+                "sortIndex": 52
+              },
+              {
+                "id": 51,
+                "tenantId": 2,
+                "groupId": 37,
+                "accountId": 156,
+                "title": "打招呼11",
+                "msgType": 1,
+                "content": "你好/hi",
+                "createTime": "2018-05-10T15:40:33.390971",
+                "lastUpdateTime": "2018-05-11T15:01:30.343501",
+                "sortIndex": 51
+              }
+            ]
+          },
+          {
+            "id": 19,
+            "groupName": "111",
+            "sortIndex": 1,
+            "parentId": 17,
+            "replyType": 0,
+            "children": [],
+            "replys": [
+              {
+                "id": 19,
+                "tenantId": 2,
+                "groupId": 19,
+                "accountId": 2,
+                "title": "33",
+                "msgType": 1,
+                "content": "32fgaer4e444",
+                "createTime": "2018-05-03T20:03:39.730001",
+                "lastUpdateTime": "2018-05-03T20:03:44.870573",
+                "sortIndex": 19
+              }
+            ]
+          }
+        ],
+        "replys": []
+      }
+    ],
+    "replys": [
+      {
+        "id": 41,
+        "tenantId": 2,
+        "groupId": 27,
+        "accountId": 156,
+        "title": "hhhii",
+        "msgType": 3,
+        "content": "https://kefures.oss-cn-shenzhen.aliyuncs.com/test/candelete/delete/20180510103128.jpg",
+        "createTime": "2018-05-10T10:31:33.125006",
+        "lastUpdateTime": "2018-05-10T10:31:33.125006",
+        "sortIndex": 41
+      },
+      {
+        "id": 36,
+        "tenantId": 2,
+        "groupId": 27,
+        "accountId": 3,
+        "title": "+++++",
+        "msgType": 1,
+        "content": "+++++++++++",
+        "createTime": "2018-05-08T17:03:21.65971",
+        "lastUpdateTime": "2018-05-10T10:30:45.953129",
+        "sortIndex": 36
+      },
+      {
+        "id": 467,
+        "tenantId": 2,
+        "groupId": 27,
+        "accountId": 848,
+        "title": "语音01",
+        "msgType": 34,
+        "content": "{\"url\":\"https://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/reply/tenant-2/account-848/voice/15589544784781558954478469.wav\",\"durationMs\":6837}",
+        "createTime": "2019-05-27T18:54:51.648193",
+        "lastUpdateTime": "2019-05-27T18:54:51.648193",
+        "sortIndex": 26
+      },
+      {
+        "id": 468,
+        "tenantId": 2,
+        "groupId": 27,
+        "accountId": 848,
+        "title": "语音02",
+        "msgType": 34,
+        "content": "{\"url\":\"https://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/reply/tenant-2/account-848/voice/15589545102311558954510231.wav\",\"durationMs\":4454}",
+        "createTime": "2019-05-27T18:55:14.156146",
+        "lastUpdateTime": "2019-05-27T18:55:14.156146",
+        "sortIndex": 16
+      },
+      {
+        "id": 469,
+        "tenantId": 2,
+        "groupId": 27,
+        "accountId": 848,
+        "title": "语音03",
+        "msgType": 34,
+        "content": "{\"url\":\"https://kefures.oss-cn-shenzhen.aliyuncs.com/weremote/reply/tenant-2/account-848/voice/15589548903321558954890332.wav\",\"durationMs\":5851}",
+        "createTime": "2019-05-27T19:01:36.562415",
+        "lastUpdateTime": "2019-05-27T19:01:36.562415",
+        "sortIndex": 6
+      }
+    ]
+  }
+]

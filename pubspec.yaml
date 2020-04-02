@@ -63,6 +63,7 @@ flutter:
   uses-material-design: true
   assets:
   # assets-generator-begin
+    - data/EntryData.json
   # images/*
     - images/transfer_ico.png
     - images/photo_ico.png

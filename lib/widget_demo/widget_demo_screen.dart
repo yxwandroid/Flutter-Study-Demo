@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/model/screen_model.dart';
 import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
+import 'package:flutter_app_demo/widget_demo/ui/StickNestedScrollViewScreen.dart';
+import 'package:flutter_app_demo/widget_demo/ui/StickyDemo_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/container_demo_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/clip_board_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/dialog_demo_screen.dart';
@@ -66,8 +68,9 @@ class _WidgetDemoScreenState extends State<WidgetDemoScreen> {
     demoList.add(ScreenModel("PopupPage 使用  ", PopupPageScreen()));
     demoList.add(ScreenModel("notification 使用  ", NotificationScreen()));
     demoList.add(ScreenModel("inheritedWidget 使用  ", InheritedWidgetScreen()));
-    demoList.add(
-        ScreenModel("expandableListView 使用  ", ExpandableListViewScreen()));
+    demoList.add(ScreenModel("expandableListView 使用  ", ExpandableListViewScreen()));
+    demoList.add(ScreenModel("Sticky 使用  ", StickyDemoScreen()));
+    demoList.add(ScreenModel("StickyNestedScrollView 使用  ", StickNestedScrollViewScreen()));
   }
 
   onItemClick(ScreenModel screenModel) {

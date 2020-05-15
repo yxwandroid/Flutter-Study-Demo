@@ -42,8 +42,8 @@ class MyApp extends StatelessWidget {
 //      initialRoute: "Home",
 
       //路由方式2
-//      home: Home(),
-      home: StickNestedScrollViewScreen(),
+      home: Home(),
+//      home: StickNestedScrollViewScreen(),
 //      home: StickyDemoScreen(),
 //      home: MergeableMaterialItemScreen(),
 //      home: ValueNotifierScreen(),

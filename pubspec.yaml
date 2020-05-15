@@ -41,6 +41,7 @@ dependencies:
 #  url_launcher: ^5.4.1
 #  url_launcher_macos: ^0.0.1
   flutter_redux: 0.5.3
+  file_picker: ^1.9.0+1
   flutter_drag_scale:
     git: https://github.com/LiuC520/flutter_drag_scale.git
   flutter_custom_bottom_tab_bar:

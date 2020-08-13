@@ -27,6 +27,7 @@ dependencies:
   common_utils: ^1.1.1
   flustars: ^0.2.5
   dio: ^2.1.5
+  crypto: ^2.0.6
   fluttertoast: ^3.0.4
   rxdart: ^0.21.0
   event_bus: ^1.1.0

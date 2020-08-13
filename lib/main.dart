@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/business_ui/async_screen.dart';
 import 'package:flutter_app_demo/business_ui/value_notifier_screen.dart';
+import 'package:flutter_app_demo/performance.analysis/PerformanceAnalysis1Screen.dart';
+import 'package:flutter_app_demo/performance.analysis/PerformanceAnalysis2Screen.dart';
 import 'package:flutter_app_demo/utils/route_helper.dart';
 import 'package:flutter_app_demo/widget_demo/ui/StickNestedScrollViewScreen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/StickyDemo_screen.dart';
@@ -32,7 +34,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      showPerformanceOverlay: true,
+      //启动性能检测
+      checkerboardOffscreenLayers: true,
+      //使用了saveLayer
+//      checkerboardRasterCacheImages: true, // 做了缓存的静态图像图片在刷新页面使不会改变棋盘格的颜色；如果棋盘格颜色变了，说明被重新缓存，这是我们要避免的
 //      theme: ThemeData.dark(),
+
 //      debugShowCheckedModeBanner: true,
 ////路由方式1   注意跳转路由的时候使用的方式使用routeName的方式
 //      navigatorObservers: [
@@ -43,6 +51,7 @@ class MyApp extends StatelessWidget {
 
       //路由方式2
       home: Home(),
+//      home: PerformanceAnalysis2Screen(),
 //      home: StickNestedScrollViewScreen(),
 //      home: StickyDemoScreen(),
 //      home: MergeableMaterialItemScreen(),
@@ -73,6 +82,8 @@ class _HomeState extends State<Home> {
     demoList.add(ScreenModel("ValueNotifier使用 ", ValueNotifierScreen()));
     demoList.add(ScreenModel("Flutter中的异步 ", AsyncScreen()));
     demoList.add(ScreenModel("Bloc使用 ", LoginScreen()));
+    demoList.add(ScreenModel("Flutter性能分析 ", PerformanceAnalysis1Screen()));
+    demoList.add(ScreenModel("Flutter性能分析2 ", PerformanceAnalysis2Screen()));
   }
 
   onItemClick(ScreenModel screenModel) {
@@ -95,11 +106,13 @@ class _HomeState extends State<Home> {
                     imageUrl: screenModel.url,
                     placeholder: (context, url) =>
                         new CircularProgressIndicator(),
-                    errorWidget: (context, url, error) => new Icon(Icons.error),
+                    errorWidget: (context, url, error) =>
+                        new Icon(Icons.error),
                   ),
                 )
               : Container(),
-          Container(margin: EdgeInsets.all(20), child: Text(screenModel.name)),
+          Container(
+              margin: EdgeInsets.all(20), child: Text(screenModel.name)),
         ],
       ),
     );

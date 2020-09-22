@@ -34,9 +34,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      showPerformanceOverlay: true,
-      //启动性能检测
-      checkerboardOffscreenLayers: true,
+      // showPerformanceOverlay: true,
+//      启动性能检测
+      // checkerboardOffscreenLayers: true,
       //使用了saveLayer
 //      checkerboardRasterCacheImages: true, // 做了缓存的静态图像图片在刷新页面使不会改变棋盘格的颜色；如果棋盘格颜色变了，说明被重新缓存，这是我们要避免的
 //      theme: ThemeData.dark(),

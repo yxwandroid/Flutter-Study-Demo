@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/model/screen_model.dart';
 import 'package:flutter_app_demo/stream/stream_demo_screen.dart';
+import 'package:flutter_app_demo/widget_demo/ui/custom_slider_screen.dart';
+import 'package:flutter_app_demo/widget_demo/ui/slider_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/FilePickerScreen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/StickNestedScrollViewScreen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/StickyDemo_screen.dart';
@@ -19,6 +21,7 @@ import 'package:flutter_app_demo/widget_demo/ui/multl_list_widget/multi_list_wid
 import 'package:flutter_app_demo/widget_demo/ui/notification_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/popup_page_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/progress_dialog_demo_screen.dart';
+import 'package:flutter_app_demo/widget_demo/ui/radio_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/refreshIndicator_demo_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/stack_demo_screen.dart';
 import 'package:flutter_app_demo/widget_demo/ui/tab_bar_view_demo_screen.dart';
@@ -73,6 +76,9 @@ class _WidgetDemoScreenState extends State<WidgetDemoScreen> {
     demoList.add(ScreenModel("Sticky 使用  ", StickyDemoScreen()));
     demoList.add(ScreenModel("StickyNestedScrollView 使用  ", StickNestedScrollViewScreen()));
     demoList.add(ScreenModel("FilePickerScreen 使用  ", FilePickerScreen()));
+    demoList.add(ScreenModel("radio 使用  ", RadioScreen()));
+    demoList.add(ScreenModel("slider使用  ", SliderScreen()));
+    demoList.add(ScreenModel("custom slider使用  ", CustomSliderScreen()));
   }
 
   onItemClick(ScreenModel screenModel) {

@@ -17,7 +17,7 @@ class _MyFadeTest extends State<MyFadeTest> with TickerProviderStateMixin {
   @override
   void initState() {//初始化，当当前widget被插入到树中时调用
     super.initState();
-    controller = new AnimationController(vsync: this, duration: const Duration(seconds: 3));
+    controller = new AnimationController(value: 2, duration: const Duration(seconds: 3));
     curved = new CurvedAnimation(parent: controller, curve: Curves.bounceOut);//模仿小球自由落体运动轨迹
     //    controller.forward();//放在这里开启动画 ，打开页面就播放动画
   }

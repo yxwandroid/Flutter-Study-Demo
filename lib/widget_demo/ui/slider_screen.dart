@@ -19,7 +19,7 @@ class _SliderScreenState extends State<SliderScreen> {
           Container(
             margin: EdgeInsets.fromLTRB(30, 35, 30, 0),
             decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [Colors.blue, Colors.red]),// 渐变色
+                gradient: LinearGradient(begin: Alignment.center,end: Alignment.center),// 渐变色
                 borderRadius: BorderRadius.circular(25)
             ),
             child: Slider(
@@ -46,7 +46,7 @@ class _SliderScreenState extends State<SliderScreen> {
           Container(
             margin: EdgeInsets.fromLTRB(30, 35, 30, 0),
             decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [Colors.blue, Colors.red]),// 渐变色
+                gradient: LinearGradient(begin: Alignment.center,end: Alignment.center,),// 渐变色
                 borderRadius: BorderRadius.circular(25)
             ),
             child: Slider(

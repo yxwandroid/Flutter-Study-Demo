@@ -49,7 +49,7 @@ class IState extends State<SlideWidget> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _animation = AnimationController(vsync: this);
+    _animation = AnimationController(value: 2.0);
   }
 
   void _moveSmoothly(double start, double end, {int duration: 100}) {
@@ -189,8 +189,8 @@ class RenderSlideObject extends RenderProxyBox {
     size = child.size - Offset(_buttonWidth, 0.0);
   }
 
-  @override
-  bool hitTestChildren(HitTestResult result, {Offset position}) {
-    return child.hitTest(result, position: (position - _offset));
-  }
+  // @override
+  // bool hitTestChildren(HitTestResult result, {Offset position}) {
+  //   return child.hitTest(result, position: (position - _offset));
+  // }
 }

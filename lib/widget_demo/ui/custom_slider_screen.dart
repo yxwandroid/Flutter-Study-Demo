@@ -199,8 +199,7 @@ class _ColorPickerState extends State<ColorPicker> {
                 decoration: BoxDecoration(
                   border: Border.all(width: 1, color: Colors.grey[800]),
                   borderRadius: BorderRadius.circular(10),
-                  gradient:
-                      LinearGradient(colors: [widget.color, Colors.white]),
+                  gradient:LinearGradient(begin: Alignment.center,end: Alignment.center),
                 ),
                 child: CustomPaint(
                   painter: _SliderIndicatorPainter(
